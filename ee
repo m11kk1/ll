@@ -1,0 +1,2598 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local SwagmodeV002 = Instance.new("ScreenGui")
+local SwagmodeFrame = Instance.new("Frame")
+local Pages = Instance.new("Frame")
+local CashPage = Instance.new("Frame")
+local AutoCrate = Instance.new("TextButton")
+local AutoFarm = Instance.new("TextButton")
+local BoxingAutoFarm = Instance.new("TextButton")
+local LettuceAutoFarm = Instance.new("TextButton")
+local HideCashDrops = Instance.new("TextButton")
+local StompAutoFarm = Instance.new("TextButton")
+local MainScriptsPage = Instance.new("Frame")
+local OtherMain = Instance.new("ScrollingFrame")
+local SetTarget = Instance.new("TextButton")
+local BagAll = Instance.new("TextButton")
+local NoClip = Instance.new("TextButton")
+local NoRecoil = Instance.new("TextButton")
+local Spin = Instance.new("TextButton")
+local ToggleF = Instance.new("TextButton")
+local Macro = Instance.new("TextButton")
+local ShowU = Instance.new("TextButton")
+local MoneyE = Instance.new("TextButton")
+local SwagU = Instance.new("TextButton")
+local LowGFX = Instance.new("TextButton")
+local ResetC = Instance.new("TextButton")
+local FlyFrame = Instance.new("Frame")
+local ExtraLabel = Instance.new("TextLabel")
+local Fly = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local ChangeFlyMode = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local FlySpeedPlus = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local FlySpeedPlus_2 = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local TargetPage = Instance.new("Frame")
+local Fling = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local Knock = Instance.new("TextButton")
+local HidePlayer = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local View = Instance.new("TextButton")
+local Goto = Instance.new("TextButton")
+local Bag = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local RPGLock = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local TaserLock = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local Loopkill2 = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local GrenadeLock = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local LoopKill = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local TogglesPage = Instance.new("ScrollingFrame")
+local AntiSLow = Instance.new("TextButton")
+local AntiStomp = Instance.new("TextButton")
+local AntiArrest = Instance.new("TextButton")
+local AltArmor = Instance.new("TextButton")
+local SuperSpeed = Instance.new("TextButton")
+local HideBlock = Instance.new("TextButton")
+local CashAura = Instance.new("TextButton")
+local Qtotp = Instance.new("TextButton")
+local AutoBuyArmor = Instance.new("TextButton")
+local AutoStomp = Instance.new("TextButton")
+local AutoBlock = Instance.new("TextButton")
+local HideUser = Instance.new("TextButton")
+local AutoDrop = Instance.new("TextButton")
+local AntiEffects = Instance.new("TextButton")
+local RocketRide = Instance.new("TextButton")
+local AntiFling = Instance.new("TextButton")
+local HighJump = Instance.new("TextButton")
+local HomePage = Instance.new("ScrollingFrame")
+local NameFrame = Instance.new("Frame")
+local UICorner_13 = Instance.new("UICorner")
+local RankIcon = Instance.new("ImageLabel")
+local PlayerName = Instance.new("TextLabel")
+local RankFrame = Instance.new("Frame")
+local UICorner_14 = Instance.new("UICorner")
+local RankIcon_2 = Instance.new("ImageLabel")
+local RankName = Instance.new("TextLabel")
+local Report = Instance.new("Frame")
+local Line = Instance.new("Frame")
+local UICorner_15 = Instance.new("UICorner")
+local ReportTitle = Instance.new("TextLabel")
+local UIGradient = Instance.new("UIGradient")
+local ReportFrame = Instance.new("Frame")
+local UIListLayout = Instance.new("UIListLayout")
+local Discord = Instance.new("TextLabel")
+local any = Instance.new("TextLabel")
+local User = Instance.new("TextLabel")
+local Update = Instance.new("Frame")
+local Line_2 = Instance.new("Frame")
+local UICorner_16 = Instance.new("UICorner")
+local UpdateTitle = Instance.new("TextLabel")
+local UIGradient_2 = Instance.new("UIGradient")
+local UpdateScrollingList = Instance.new("ScrollingFrame")
+local UIListLayout_2 = Instance.new("UIListLayout")
+local update = Instance.new("TextLabel")
+local update_2 = Instance.new("TextLabel")
+local update_3 = Instance.new("TextLabel")
+local PlayerImage = Instance.new("ImageLabel")
+local UICorner_17 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local Homeline = Instance.new("Frame")
+local AimLockPage = Instance.new("ScrollingFrame")
+local AntiLock = Instance.new("TextButton")
+local UICorner_18 = Instance.new("UICorner")
+local Elock = Instance.new("TextButton")
+local UICorner_19 = Instance.new("UICorner")
+local SilentAim = Instance.new("TextButton")
+local UICorner_20 = Instance.new("UICorner")
+local ChangeAimlock = Instance.new("TextButton")
+local UICorner_21 = Instance.new("UICorner")
+local HideTargetMarker = Instance.new("TextButton")
+local UICorner_22 = Instance.new("UICorner")
+local AimType = Instance.new("TextButton")
+local UICorner_23 = Instance.new("UICorner")
+local ChangeAiming = Instance.new("TextButton")
+local UICorner_24 = Instance.new("UICorner")
+local PlayerEsp = Instance.new("TextButton")
+local UICorner_25 = Instance.new("UICorner")
+local Blue = Instance.new("TextButton")
+local UICorner_26 = Instance.new("UICorner")
+local Green = Instance.new("TextButton")
+local UICorner_27 = Instance.new("UICorner")
+local Red = Instance.new("TextButton")
+local UICorner_28 = Instance.new("UICorner")
+local TextBox = Instance.new("TextBox")
+local QuickBuyPage = Instance.new("ScrollingFrame")
+local Gun = Instance.new("TextLabel")
+local Melee = Instance.new("TextLabel")
+local FoodLabel = Instance.new("TextLabel")
+local ExtraLabel_2 = Instance.new("TextLabel")
+local QuickTpPage = Instance.new("ScrollingFrame")
+local NotLocationsLabel = Instance.new("TextLabel")
+local LocationsLabel = Instance.new("TextLabel")
+local NotLocations = Instance.new("Frame")
+local SavePos = Instance.new("TextButton")
+local SoundBoardPage = Instance.new("ScrollingFrame")
+local AudioBoard = Instance.new("ScrollingFrame")
+local CancelSound = Instance.new("TextButton")
+local ConfirmSound = Instance.new("TextButton")
+local AudioIDSound = Instance.new("TextBox")
+local AudioNameSound = Instance.new("TextBox")
+local CheckingBoombox = Instance.new("Frame")
+local TextLabel_2 = Instance.new("TextLabel")
+local SoundCollection = Instance.new("ScrollingFrame")
+local UIListLayout_3 = Instance.new("UIListLayout")
+local TextLabel_3 = Instance.new("TextLabel")
+local NewAudio = Instance.new("TextButton")
+local Enabled = Instance.new("TextButton")
+local Caps = Instance.new("TextButton")
+local TargetMenuFrame = Instance.new("Frame")
+local Contents = Instance.new("Frame")
+local CaaTargetTextbox = Instance.new("TextBox")
+local ZCrew = Instance.new("TextButton")
+local Cash = Instance.new("TextLabel")
+local DBounty = Instance.new("TextLabel")
+local BTargetImage = Instance.new("ImageLabel")
+local UICorner_29 = Instance.new("UICorner")
+local Edge1 = Instance.new("Frame")
+local Edge2 = Instance.new("Frame")
+local Edge3 = Instance.new("Frame")
+local DropShadowHolder = Instance.new("Frame")
+local ShadowHolder = Instance.new("ImageLabel")
+local Edge1_2 = Instance.new("Frame")
+local Edge2_2 = Instance.new("Frame")
+local Edge3_2 = Instance.new("Frame")
+local Edge4 = Instance.new("Frame")
+local Notch = Instance.new("Frame")
+local Corner = Instance.new("Frame")
+local Corner_2 = Instance.new("Frame")
+local UICorner_30 = Instance.new("UICorner")
+local Middle = Instance.new("Frame")
+local Info = Instance.new("ImageButton")
+local Prem = Instance.new("ImageButton")
+local QuickView = Instance.new("ImageButton")
+local ImageButton = Instance.new("ImageButton")
+local ImageButton_2 = Instance.new("ImageButton")
+local MenuFrame = Instance.new("Frame")
+local SwagMode = Instance.new("TextLabel")
+local UIGradient_3 = Instance.new("UIGradient")
+local UnderLine = Instance.new("Frame")
+local TabsFrame = Instance.new("ScrollingFrame")
+local UIListLayout_4 = Instance.new("UIListLayout")
+local UIListLayout_5 = Instance.new("UIListLayout")
+local Home = Instance.new("TextButton")
+local Target = Instance.new("TextButton")
+local MainScripts = Instance.new("TextButton")
+local Toggles = Instance.new("TextButton")
+local QuickTP = Instance.new("TextButton")
+local QuickBuy = Instance.new("TextButton")
+local AimLockESP = Instance.new("TextButton")
+local Cashhh = Instance.new("TextButton")
+local Audio = Instance.new("TextButton")
+
+--Properties:
+
+SwagmodeV002.Name = "SwagmodeV002"
+SwagmodeV002.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+SwagmodeV002.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+SwagmodeFrame.Name = "SwagmodeFrame"
+SwagmodeFrame.Parent = SwagmodeV002
+SwagmodeFrame.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+SwagmodeFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SwagmodeFrame.BorderSizePixel = 0
+SwagmodeFrame.Position = UDim2.new(0.396545291, 2, 0.547854483, -265)
+SwagmodeFrame.Size = UDim2.new(0, 549, 0, 307)
+
+Pages.Name = "Pages"
+Pages.Parent = SwagmodeFrame
+Pages.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+Pages.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Pages.BorderSizePixel = 0
+Pages.Position = UDim2.new(0.252901614, 0, 0.0488599353, 0)
+Pages.Size = UDim2.new(0, 377, 0, 276)
+
+CashPage.Name = "CashPage"
+CashPage.Parent = Pages
+CashPage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CashPage.BackgroundTransparency = 1.000
+CashPage.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CashPage.BorderSizePixel = 0
+CashPage.Position = UDim2.new(0, 0, -0.0289855078, 0)
+CashPage.Size = UDim2.new(1, 0, 1.06717181, 0)
+CashPage.Visible = false
+
+AutoCrate.Name = "AutoCrate"
+AutoCrate.Parent = CashPage
+AutoCrate.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+AutoCrate.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AutoCrate.BorderSizePixel = 0
+AutoCrate.Position = UDim2.new(0.0123393014, 0, 0.829510272, 0)
+AutoCrate.Size = UDim2.new(0, 114, 0, 41)
+AutoCrate.Font = Enum.Font.GothamBlack
+AutoCrate.Text = "AutoCrate"
+AutoCrate.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoCrate.TextSize = 12.000
+
+AutoFarm.Name = "AutoFarm"
+AutoFarm.Parent = CashPage
+AutoFarm.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+AutoFarm.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AutoFarm.BorderSizePixel = 0
+AutoFarm.Position = UDim2.new(0.341251761, 0, 0.827473164, 0)
+AutoFarm.Size = UDim2.new(0, 115, 0, 41)
+AutoFarm.Font = Enum.Font.GothamBlack
+AutoFarm.Text = "ATM Autofarm"
+AutoFarm.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoFarm.TextSize = 12.000
+
+BoxingAutoFarm.Name = "BoxingAutoFarm"
+BoxingAutoFarm.Parent = CashPage
+BoxingAutoFarm.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+BoxingAutoFarm.BorderColor3 = Color3.fromRGB(0, 0, 0)
+BoxingAutoFarm.BorderSizePixel = 0
+BoxingAutoFarm.Position = UDim2.new(0.343904316, 0, 0.657716632, 0)
+BoxingAutoFarm.Size = UDim2.new(0, 115, 0, 41)
+BoxingAutoFarm.Font = Enum.Font.GothamBlack
+BoxingAutoFarm.Text = "Boxing Autofarm"
+BoxingAutoFarm.TextColor3 = Color3.fromRGB(255, 255, 255)
+BoxingAutoFarm.TextSize = 12.000
+
+LettuceAutoFarm.Name = "LettuceAutoFarm"
+LettuceAutoFarm.Parent = CashPage
+LettuceAutoFarm.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+LettuceAutoFarm.BorderColor3 = Color3.fromRGB(0, 0, 0)
+LettuceAutoFarm.BorderSizePixel = 0
+LettuceAutoFarm.Position = UDim2.new(0.0123393033, 0, 0.657716632, 0)
+LettuceAutoFarm.Size = UDim2.new(0, 114, 0, 41)
+LettuceAutoFarm.Font = Enum.Font.GothamBlack
+LettuceAutoFarm.Text = "Lettuce Autofarm"
+LettuceAutoFarm.TextColor3 = Color3.fromRGB(255, 255, 255)
+LettuceAutoFarm.TextSize = 12.000
+
+HideCashDrops.Name = "HideCashDrops"
+HideCashDrops.Parent = CashPage
+HideCashDrops.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+HideCashDrops.BorderColor3 = Color3.fromRGB(0, 0, 0)
+HideCashDrops.BorderSizePixel = 0
+HideCashDrops.Position = UDim2.new(0.670164227, 0, 0.416956812, 0)
+HideCashDrops.Size = UDim2.new(0, 106, 0, 32)
+HideCashDrops.Font = Enum.Font.GothamBlack
+HideCashDrops.Text = "Hide Cash Drops"
+HideCashDrops.TextColor3 = Color3.fromRGB(255, 255, 255)
+HideCashDrops.TextSize = 12.000
+
+StompAutoFarm.Name = "StompAutoFarm"
+StompAutoFarm.Parent = CashPage
+StompAutoFarm.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+StompAutoFarm.BorderColor3 = Color3.fromRGB(0, 0, 0)
+StompAutoFarm.BorderSizePixel = 0
+StompAutoFarm.Position = UDim2.new(0.668347478, 0, 0.827234089, 0)
+StompAutoFarm.Size = UDim2.new(0, 108, 0, 41)
+StompAutoFarm.Font = Enum.Font.GothamBlack
+StompAutoFarm.Text = "Stomp Autofarm"
+StompAutoFarm.TextColor3 = Color3.fromRGB(255, 255, 255)
+StompAutoFarm.TextSize = 12.000
+
+MainScriptsPage.Name = "MainScriptsPage"
+MainScriptsPage.Parent = Pages
+MainScriptsPage.Active = true
+MainScriptsPage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainScriptsPage.BackgroundTransparency = 1.000
+MainScriptsPage.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainScriptsPage.BorderSizePixel = 0
+MainScriptsPage.Size = UDim2.new(1, 0, 1.03812921, 0)
+MainScriptsPage.Visible = false
+
+OtherMain.Name = "OtherMain"
+OtherMain.Parent = MainScriptsPage
+OtherMain.Active = true
+OtherMain.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OtherMain.BackgroundTransparency = 1.000
+OtherMain.BorderColor3 = Color3.fromRGB(0, 0, 0)
+OtherMain.BorderSizePixel = 0
+OtherMain.Position = UDim2.new(-0.00300000003, 0, -0.00100000005, 0)
+OtherMain.Size = UDim2.new(0, 379, 0, 200)
+OtherMain.CanvasSize = UDim2.new(0, 0, 0.959999979, 0)
+
+SetTarget.Name = "SetTarget"
+SetTarget.Parent = OtherMain
+SetTarget.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+SetTarget.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SetTarget.BorderSizePixel = 0
+SetTarget.Position = UDim2.new(0.662621558, 0, 0.160557017, 0)
+SetTarget.Size = UDim2.new(0, 113, 0, 41)
+SetTarget.Font = Enum.Font.GothamBlack
+SetTarget.Text = "Set Target[T]"
+SetTarget.TextColor3 = Color3.fromRGB(255, 255, 255)
+SetTarget.TextSize = 14.000
+
+BagAll.Name = "BagAll"
+BagAll.Parent = OtherMain
+BagAll.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+BagAll.BorderColor3 = Color3.fromRGB(0, 0, 0)
+BagAll.BorderSizePixel = 0
+BagAll.Position = UDim2.new(0.662621617, 0, 0.000557054766, 0)
+BagAll.Size = UDim2.new(0, 113, 0, 41)
+BagAll.Font = Enum.Font.GothamBlack
+BagAll.Text = "Bag All"
+BagAll.TextColor3 = Color3.fromRGB(255, 255, 255)
+BagAll.TextSize = 14.000
+
+NoClip.Name = "NoClip"
+NoClip.Parent = OtherMain
+NoClip.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+NoClip.BorderColor3 = Color3.fromRGB(0, 0, 0)
+NoClip.BorderSizePixel = 0
+NoClip.Position = UDim2.new(0.348637432, 0, 0.00555700436, 0)
+NoClip.Size = UDim2.new(0, 113, 0, 41)
+NoClip.Font = Enum.Font.GothamBlack
+NoClip.Text = "NoClip"
+NoClip.TextColor3 = Color3.fromRGB(255, 255, 255)
+NoClip.TextSize = 14.000
+
+NoRecoil.Name = "NoRecoil"
+NoRecoil.Parent = OtherMain
+NoRecoil.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+NoRecoil.BorderColor3 = Color3.fromRGB(0, 0, 0)
+NoRecoil.BorderSizePixel = 0
+NoRecoil.Position = UDim2.new(0.034300793, 0, 0, 0)
+NoRecoil.Size = UDim2.new(0, 113, 0, 41)
+NoRecoil.Font = Enum.Font.GothamBold
+NoRecoil.Text = "NoRecoil"
+NoRecoil.TextColor3 = Color3.fromRGB(255, 255, 255)
+NoRecoil.TextSize = 14.000
+
+Spin.Name = "Spin"
+Spin.Parent = OtherMain
+Spin.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+Spin.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Spin.BorderSizePixel = 0
+Spin.Position = UDim2.new(0.660000026, 0, 0.321999997, 0)
+Spin.Size = UDim2.new(0, 113, 0, 41)
+Spin.Font = Enum.Font.GothamBlack
+Spin.Text = "Spin"
+Spin.TextColor3 = Color3.fromRGB(255, 255, 255)
+Spin.TextSize = 14.000
+
+ToggleF.Name = "ToggleF"
+ToggleF.Parent = OtherMain
+ToggleF.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+ToggleF.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ToggleF.BorderSizePixel = 0
+ToggleF.Position = UDim2.new(0.346377313, 0, 0.32099995, 0)
+ToggleF.Size = UDim2.new(0, 113, 0, 41)
+ToggleF.Font = Enum.Font.GothamBlack
+ToggleF.Text = "Toggle Fog"
+ToggleF.TextColor3 = Color3.fromRGB(255, 255, 255)
+ToggleF.TextSize = 14.000
+
+Macro.Name = "Macro"
+Macro.Parent = OtherMain
+Macro.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+Macro.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Macro.BorderSizePixel = 0
+Macro.Position = UDim2.new(0.345998853, 0, 0.160557017, 0)
+Macro.Size = UDim2.new(0, 113, 0, 41)
+Macro.Font = Enum.Font.GothamBlack
+Macro.Text = "Macro"
+Macro.TextColor3 = Color3.fromRGB(255, 255, 255)
+Macro.TextSize = 14.000
+
+ShowU.Name = "ShowU"
+ShowU.Parent = OtherMain
+ShowU.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+ShowU.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ShowU.BorderSizePixel = 0
+ShowU.Position = UDim2.new(0.0320146978, 0, 0.160557017, 0)
+ShowU.Size = UDim2.new(0, 113, 0, 41)
+ShowU.Font = Enum.Font.GothamBlack
+ShowU.Text = "Show Users"
+ShowU.TextColor3 = Color3.fromRGB(255, 255, 255)
+ShowU.TextSize = 14.000
+
+MoneyE.Name = "MoneyE"
+MoneyE.Parent = OtherMain
+MoneyE.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+MoneyE.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MoneyE.BorderSizePixel = 0
+MoneyE.Position = UDim2.new(0.0323931575, 0, 0.32099995, 0)
+MoneyE.Size = UDim2.new(0, 113, 0, 41)
+MoneyE.Font = Enum.Font.GothamBlack
+MoneyE.Text = "Money Esp"
+MoneyE.TextColor3 = Color3.fromRGB(255, 255, 255)
+MoneyE.TextSize = 14.000
+
+SwagU.Name = "SwagU"
+SwagU.Parent = OtherMain
+SwagU.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+SwagU.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SwagU.BorderSizePixel = 0
+SwagU.Position = UDim2.new(0.660000026, 0, 0.48300001, 0)
+SwagU.Size = UDim2.new(0, 113, 0, 41)
+SwagU.Font = Enum.Font.GothamBlack
+SwagU.Text = "Swag Users"
+SwagU.TextColor3 = Color3.fromRGB(255, 255, 255)
+SwagU.TextSize = 14.000
+
+LowGFX.Name = "LowGFX"
+LowGFX.Parent = OtherMain
+LowGFX.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+LowGFX.BorderColor3 = Color3.fromRGB(0, 0, 0)
+LowGFX.BorderSizePixel = 0
+LowGFX.Position = UDim2.new(0.343377322, 0, 0.48300001, 0)
+LowGFX.Size = UDim2.new(0, 113, 0, 41)
+LowGFX.Font = Enum.Font.GothamBlack
+LowGFX.Text = "Low GFX"
+LowGFX.TextColor3 = Color3.fromRGB(255, 255, 255)
+LowGFX.TextSize = 14.000
+
+ResetC.Name = "ResetC"
+ResetC.Parent = OtherMain
+ResetC.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+ResetC.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ResetC.BorderSizePixel = 0
+ResetC.Position = UDim2.new(0.0320316851, 0, 0.48300001, 0)
+ResetC.Size = UDim2.new(0, 113, 0, 41)
+ResetC.Font = Enum.Font.GothamBlack
+ResetC.Text = "Reset Char"
+ResetC.TextColor3 = Color3.fromRGB(255, 255, 255)
+ResetC.TextSize = 14.000
+
+FlyFrame.Name = "FlyFrame"
+FlyFrame.Parent = MainScriptsPage
+FlyFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FlyFrame.BackgroundTransparency = 1.000
+FlyFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FlyFrame.BorderSizePixel = 0
+FlyFrame.Position = UDim2.new(0, 0, 0.677536309, 0)
+FlyFrame.Size = UDim2.new(0, 364, 0, 87)
+
+ExtraLabel.Name = "Extra Label"
+ExtraLabel.Parent = FlyFrame
+ExtraLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExtraLabel.BackgroundTransparency = 1.000
+ExtraLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ExtraLabel.BorderSizePixel = 0
+ExtraLabel.Position = UDim2.new(0.0162799545, 0, 0.0853731036, 0)
+ExtraLabel.Size = UDim2.new(1, 0, -0.262269557, 38)
+ExtraLabel.Font = Enum.Font.GothamBlack
+ExtraLabel.Text = "[Fly Configuration]"
+ExtraLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExtraLabel.TextSize = 15.000
+
+Fly.Name = "Fly"
+Fly.Parent = FlyFrame
+Fly.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+Fly.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Fly.BorderSizePixel = 0
+Fly.Position = UDim2.new(0.363834471, 0, 0.321945727, 0)
+Fly.Size = UDim2.new(0, 113, 0, 27)
+Fly.Font = Enum.Font.GothamBlack
+Fly.Text = "Fly [ X ]"
+Fly.TextColor3 = Color3.fromRGB(255, 255, 255)
+Fly.TextSize = 14.000
+
+UICorner.Parent = Fly
+
+ChangeFlyMode.Name = "ChangeFlyMode"
+ChangeFlyMode.Parent = FlyFrame
+ChangeFlyMode.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+ChangeFlyMode.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ChangeFlyMode.BorderSizePixel = 0
+ChangeFlyMode.Position = UDim2.new(0.363834471, 0, 0.678267539, 0)
+ChangeFlyMode.Size = UDim2.new(0, 113, 0, 27)
+ChangeFlyMode.Font = Enum.Font.GothamBlack
+ChangeFlyMode.Text = "Change FlyMode"
+ChangeFlyMode.TextColor3 = Color3.fromRGB(255, 255, 255)
+ChangeFlyMode.TextSize = 14.000
+
+UICorner_2.Parent = ChangeFlyMode
+
+FlySpeedPlus.Name = "FlySpeedPlus"
+FlySpeedPlus.Parent = FlyFrame
+FlySpeedPlus.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+FlySpeedPlus.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FlySpeedPlus.BorderSizePixel = 0
+FlySpeedPlus.Position = UDim2.new(0.705104351, 0, 0.678267598, 0)
+FlySpeedPlus.Size = UDim2.new(0, 113, 0, 27)
+FlySpeedPlus.Font = Enum.Font.GothamBlack
+FlySpeedPlus.Text = "FlySpeed +"
+FlySpeedPlus.TextColor3 = Color3.fromRGB(255, 255, 255)
+FlySpeedPlus.TextSize = 14.000
+
+UICorner_3.Parent = FlySpeedPlus
+
+FlySpeedPlus_2.Name = "FlySpeedPlus"
+FlySpeedPlus_2.Parent = FlyFrame
+FlySpeedPlus_2.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+FlySpeedPlus_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FlySpeedPlus_2.BorderSizePixel = 0
+FlySpeedPlus_2.Position = UDim2.new(0.0278556719, 0, 0.678267598, 0)
+FlySpeedPlus_2.Size = UDim2.new(0, 113, 0, 27)
+FlySpeedPlus_2.Font = Enum.Font.GothamBlack
+FlySpeedPlus_2.Text = "FlySpeed -"
+FlySpeedPlus_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+FlySpeedPlus_2.TextSize = 14.000
+
+UICorner_4.Parent = FlySpeedPlus_2
+
+TargetPage.Name = "TargetPage"
+TargetPage.Parent = Pages
+TargetPage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TargetPage.BackgroundTransparency = 1.000
+TargetPage.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TargetPage.BorderSizePixel = 0
+TargetPage.Size = UDim2.new(1, 0, 1, 0)
+TargetPage.Visible = false
+
+Fling.Name = "Fling"
+Fling.Parent = TargetPage
+Fling.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+Fling.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Fling.BorderSizePixel = 0
+Fling.Position = UDim2.new(0.665176094, 0, 0.170991838, 0)
+Fling.Size = UDim2.new(0, 113, 0, 41)
+Fling.Font = Enum.Font.GothamBlack
+Fling.Text = "Fling"
+Fling.TextColor3 = Color3.fromRGB(255, 255, 255)
+Fling.TextSize = 14.000
+
+UICorner_5.Parent = Fling
+
+Knock.Name = "Knock"
+Knock.Parent = TargetPage
+Knock.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+Knock.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Knock.BorderSizePixel = 0
+Knock.Position = UDim2.new(0.665176094, 0, -0.00292122643, 0)
+Knock.Size = UDim2.new(0, 113, 0, 41)
+Knock.Font = Enum.Font.GothamBlack
+Knock.Text = "Knock"
+Knock.TextColor3 = Color3.fromRGB(255, 255, 255)
+Knock.TextSize = 14.000
+
+HidePlayer.Name = "HidePlayer"
+HidePlayer.Parent = TargetPage
+HidePlayer.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+HidePlayer.BorderColor3 = Color3.fromRGB(0, 0, 0)
+HidePlayer.BorderSizePixel = 0
+HidePlayer.Position = UDim2.new(0.349526256, 0, 0.170991868, 0)
+HidePlayer.Size = UDim2.new(0, 113, 0, 41)
+HidePlayer.Font = Enum.Font.GothamBlack
+HidePlayer.Text = "HidePlayer"
+HidePlayer.TextColor3 = Color3.fromRGB(255, 255, 255)
+HidePlayer.TextSize = 14.000
+
+UICorner_6.Parent = HidePlayer
+
+View.Name = "View"
+View.Parent = TargetPage
+View.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+View.BorderColor3 = Color3.fromRGB(0, 0, 0)
+View.BorderSizePixel = 0
+View.Position = UDim2.new(0.349526256, 0, -0.00292122643, 0)
+View.Size = UDim2.new(0, 113, 0, 41)
+View.Font = Enum.Font.GothamBlack
+View.Text = "View"
+View.TextColor3 = Color3.fromRGB(255, 255, 255)
+View.TextSize = 14.000
+
+Goto.Name = "Goto"
+Goto.Parent = TargetPage
+Goto.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+Goto.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Goto.BorderSizePixel = 0
+Goto.Position = UDim2.new(0.0285713412, 0, -0.00292122643, 0)
+Goto.Size = UDim2.new(0, 113, 0, 41)
+Goto.Font = Enum.Font.GothamBlack
+Goto.Text = "Goto"
+Goto.TextColor3 = Color3.fromRGB(255, 255, 255)
+Goto.TextSize = 14.000
+
+Bag.Name = "Bag"
+Bag.Parent = TargetPage
+Bag.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+Bag.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Bag.BorderSizePixel = 0
+Bag.Position = UDim2.new(0.0285713375, 0, 0.170991838, 0)
+Bag.Size = UDim2.new(0, 113, 0, 41)
+Bag.Font = Enum.Font.GothamBlack
+Bag.Text = "Bag"
+Bag.TextColor3 = Color3.fromRGB(255, 255, 255)
+Bag.TextSize = 14.000
+
+UICorner_7.Parent = Bag
+
+RPGLock.Name = "RPG Lock"
+RPGLock.Parent = TargetPage
+RPGLock.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+RPGLock.BorderColor3 = Color3.fromRGB(0, 0, 0)
+RPGLock.BorderSizePixel = 0
+RPGLock.Position = UDim2.new(0.665176094, 0, 0.3449049, 0)
+RPGLock.Size = UDim2.new(0, 113, 0, 41)
+RPGLock.Font = Enum.Font.GothamBlack
+RPGLock.Text = "RPG Lock"
+RPGLock.TextColor3 = Color3.fromRGB(255, 255, 255)
+RPGLock.TextSize = 14.000
+
+UICorner_8.Parent = RPGLock
+
+TaserLock.Name = "Taser Lock"
+TaserLock.Parent = TargetPage
+TaserLock.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+TaserLock.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TaserLock.BorderSizePixel = 0
+TaserLock.Position = UDim2.new(0.349526227, 0, 0.3449049, 0)
+TaserLock.Size = UDim2.new(0, 113, 0, 41)
+TaserLock.Font = Enum.Font.GothamBlack
+TaserLock.Text = "Taser Lock"
+TaserLock.TextColor3 = Color3.fromRGB(255, 255, 255)
+TaserLock.TextSize = 14.000
+
+UICorner_9.Parent = TaserLock
+
+Loopkill2.Name = "Loop kill2"
+Loopkill2.Parent = TargetPage
+Loopkill2.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+Loopkill2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Loopkill2.BorderSizePixel = 0
+Loopkill2.Position = UDim2.new(0.0285713077, 0, 0.3449049, 0)
+Loopkill2.Size = UDim2.new(0, 113, 0, 41)
+Loopkill2.Font = Enum.Font.GothamBlack
+Loopkill2.Text = "Loop Kill"
+Loopkill2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Loopkill2.TextSize = 14.000
+
+UICorner_10.Parent = Loopkill2
+
+GrenadeLock.Name = "Grenade Lock"
+GrenadeLock.Parent = TargetPage
+GrenadeLock.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+GrenadeLock.BorderColor3 = Color3.fromRGB(0, 0, 0)
+GrenadeLock.BorderSizePixel = 0
+GrenadeLock.Position = UDim2.new(0.0285713077, 0, 0.511571586, 0)
+GrenadeLock.Size = UDim2.new(0, 113, 0, 41)
+GrenadeLock.Font = Enum.Font.GothamBlack
+GrenadeLock.Text = "Grenade Lock"
+GrenadeLock.TextColor3 = Color3.fromRGB(255, 255, 255)
+GrenadeLock.TextSize = 14.000
+GrenadeLock.TextWrapped = true
+
+UICorner_11.Parent = GrenadeLock
+
+LoopKill.Name = "LoopKill"
+LoopKill.Parent = TargetPage
+LoopKill.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+LoopKill.BorderColor3 = Color3.fromRGB(0, 0, 0)
+LoopKill.BorderSizePixel = 0
+LoopKill.Position = UDim2.new(0.349526227, 0, 0.511571586, 0)
+LoopKill.Size = UDim2.new(0, 113, 0, 41)
+LoopKill.Font = Enum.Font.GothamBlack
+LoopKill.Text = "Use Alternate\\nKill Method"
+LoopKill.TextColor3 = Color3.fromRGB(255, 255, 255)
+LoopKill.TextSize = 14.000
+LoopKill.TextWrapped = true
+
+UICorner_12.Parent = LoopKill
+
+TogglesPage.Name = "TogglesPage"
+TogglesPage.Parent = Pages
+TogglesPage.Active = true
+TogglesPage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TogglesPage.BackgroundTransparency = 1.000
+TogglesPage.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TogglesPage.BorderSizePixel = 0
+TogglesPage.Size = UDim2.new(1, 0, 1, 0)
+TogglesPage.Visible = false
+TogglesPage.CanvasSize = UDim2.new(0, 0, 0, 0)
+
+AntiSLow.Name = "AntiSLow"
+AntiSLow.Parent = TogglesPage
+AntiSLow.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+AntiSLow.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AntiSLow.BorderSizePixel = 0
+AntiSLow.Position = UDim2.new(0.649260998, 0, -0.00292122364, 0)
+AntiSLow.Size = UDim2.new(0, 113, 0, 41)
+AntiSLow.Font = Enum.Font.GothamBlack
+AntiSLow.Text = "Anti-Slow"
+AntiSLow.TextColor3 = Color3.fromRGB(255, 255, 255)
+AntiSLow.TextSize = 14.000
+
+AntiStomp.Name = "AntiStomp"
+AntiStomp.Parent = TogglesPage
+AntiStomp.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+AntiStomp.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AntiStomp.BorderSizePixel = 0
+AntiStomp.Position = UDim2.new(0.648999989, 0, 0.163000003, 0)
+AntiStomp.Size = UDim2.new(0, 113, 0, 41)
+AntiStomp.Font = Enum.Font.GothamBlack
+AntiStomp.Text = "AntiStomp"
+AntiStomp.TextColor3 = Color3.fromRGB(255, 255, 255)
+AntiStomp.TextSize = 14.000
+
+AntiArrest.Name = "Anti-Arrest"
+AntiArrest.Parent = TogglesPage
+AntiArrest.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+AntiArrest.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AntiArrest.BorderSizePixel = 0
+AntiArrest.Position = UDim2.new(0.648999989, 0, 0.330000013, 0)
+AntiArrest.Size = UDim2.new(0, 113, 0, 41)
+AntiArrest.Font = Enum.Font.GothamBlack
+AntiArrest.Text = "Anti-Arrest"
+AntiArrest.TextColor3 = Color3.fromRGB(255, 255, 255)
+AntiArrest.TextSize = 14.000
+
+AltArmor.Name = "Alt Armor"
+AltArmor.Parent = TogglesPage
+AltArmor.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+AltArmor.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AltArmor.BorderSizePixel = 0
+AltArmor.Position = UDim2.new(0.648999989, 0, 0.497999996, 0)
+AltArmor.Size = UDim2.new(0, 113, 0, 41)
+AltArmor.Font = Enum.Font.GothamBlack
+AltArmor.Text = "Alt Armor"
+AltArmor.TextColor3 = Color3.fromRGB(255, 255, 255)
+AltArmor.TextSize = 14.000
+
+SuperSpeed.Name = "Super Speed"
+SuperSpeed.Parent = TogglesPage
+SuperSpeed.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+SuperSpeed.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SuperSpeed.BorderSizePixel = 0
+SuperSpeed.Position = UDim2.new(0.648999989, 0, 0.662999988, 0)
+SuperSpeed.Size = UDim2.new(0, 113, 0, 41)
+SuperSpeed.Font = Enum.Font.GothamBlack
+SuperSpeed.Text = "Super Speed"
+SuperSpeed.TextColor3 = Color3.fromRGB(255, 255, 255)
+SuperSpeed.TextSize = 14.000
+
+HideBlock.Name = "Hide Block"
+HideBlock.Parent = TogglesPage
+HideBlock.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+HideBlock.BorderColor3 = Color3.fromRGB(0, 0, 0)
+HideBlock.BorderSizePixel = 0
+HideBlock.Position = UDim2.new(0.333350122, 0, 0.163000003, 0)
+HideBlock.Size = UDim2.new(0, 113, 0, 41)
+HideBlock.Font = Enum.Font.GothamBlack
+HideBlock.Text = "Hide Block"
+HideBlock.TextColor3 = Color3.fromRGB(255, 255, 255)
+HideBlock.TextSize = 14.000
+
+CashAura.Name = "CashAura"
+CashAura.Parent = TogglesPage
+CashAura.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+CashAura.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CashAura.BorderSizePixel = 0
+CashAura.Position = UDim2.new(0.0177002549, 0, 0.163000003, 0)
+CashAura.Size = UDim2.new(0, 113, 0, 41)
+CashAura.Font = Enum.Font.GothamBlack
+CashAura.Text = "CashAura"
+CashAura.TextColor3 = Color3.fromRGB(255, 255, 255)
+CashAura.TextSize = 14.000
+
+Qtotp.Name = "Q to tp"
+Qtotp.Parent = TogglesPage
+Qtotp.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+Qtotp.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Qtotp.BorderSizePixel = 0
+Qtotp.Position = UDim2.new(0.330958605, 0, -0.00292122364, 0)
+Qtotp.Size = UDim2.new(0, 113, 0, 41)
+Qtotp.Font = Enum.Font.GothamBlack
+Qtotp.Text = "Q to TP"
+Qtotp.TextColor3 = Color3.fromRGB(255, 255, 255)
+Qtotp.TextSize = 14.000
+
+AutoBuyArmor.Name = "AutoBuy Armor"
+AutoBuyArmor.Parent = TogglesPage
+AutoBuyArmor.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+AutoBuyArmor.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AutoBuyArmor.BorderSizePixel = 0
+AutoBuyArmor.Position = UDim2.new(0.0153087378, 0, -0.00292122364, 0)
+AutoBuyArmor.Size = UDim2.new(0, 113, 0, 41)
+AutoBuyArmor.Font = Enum.Font.GothamBlack
+AutoBuyArmor.Text = "AutoBuy Armor"
+AutoBuyArmor.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoBuyArmor.TextSize = 14.000
+
+AutoStomp.Name = "Auto Stomp"
+AutoStomp.Parent = TogglesPage
+AutoStomp.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+AutoStomp.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AutoStomp.BorderSizePixel = 0
+AutoStomp.Position = UDim2.new(0.330697596, 0, 0.330000013, 0)
+AutoStomp.Size = UDim2.new(0, 113, 0, 41)
+AutoStomp.Font = Enum.Font.GothamBlack
+AutoStomp.Text = "Auto Stomp"
+AutoStomp.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoStomp.TextSize = 14.000
+
+AutoBlock.Name = "Auto Block"
+AutoBlock.Parent = TogglesPage
+AutoBlock.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+AutoBlock.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AutoBlock.BorderSizePixel = 0
+AutoBlock.Position = UDim2.new(0.0177002549, 0, 0.330000013, 0)
+AutoBlock.Size = UDim2.new(0, 113, 0, 41)
+AutoBlock.Font = Enum.Font.GothamBlack
+AutoBlock.Text = "Auto Block"
+AutoBlock.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoBlock.TextSize = 14.000
+
+HideUser.Name = "Hide User"
+HideUser.Parent = TogglesPage
+HideUser.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+HideUser.BorderColor3 = Color3.fromRGB(0, 0, 0)
+HideUser.BorderSizePixel = 0
+HideUser.Position = UDim2.new(0.330697596, 0, 0.497999996, 0)
+HideUser.Size = UDim2.new(0, 113, 0, 41)
+HideUser.Font = Enum.Font.GothamBlack
+HideUser.Text = "Hide User"
+HideUser.TextColor3 = Color3.fromRGB(255, 255, 255)
+HideUser.TextSize = 14.000
+
+AutoDrop.Name = "Auto Drop"
+AutoDrop.Parent = TogglesPage
+AutoDrop.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+AutoDrop.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AutoDrop.BorderSizePixel = 0
+AutoDrop.Position = UDim2.new(0.0177002549, 0, 0.497999996, 0)
+AutoDrop.Size = UDim2.new(0, 113, 0, 41)
+AutoDrop.Font = Enum.Font.GothamBlack
+AutoDrop.Text = "Auto Drop"
+AutoDrop.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoDrop.TextSize = 14.000
+
+AntiEffects.Name = "Anti-Effects"
+AntiEffects.Parent = TogglesPage
+AntiEffects.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+AntiEffects.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AntiEffects.BorderSizePixel = 0
+AntiEffects.Position = UDim2.new(0.333350122, 0, 0.662999988, 0)
+AntiEffects.Size = UDim2.new(0, 113, 0, 41)
+AntiEffects.Font = Enum.Font.GothamBlack
+AntiEffects.Text = "Anti-Effects"
+AntiEffects.TextColor3 = Color3.fromRGB(255, 255, 255)
+AntiEffects.TextSize = 14.000
+
+RocketRide.Name = "Rocket-Ride"
+RocketRide.Parent = TogglesPage
+RocketRide.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+RocketRide.BorderColor3 = Color3.fromRGB(0, 0, 0)
+RocketRide.BorderSizePixel = 0
+RocketRide.Position = UDim2.new(0.0177002549, 0, 0.662999988, 0)
+RocketRide.Size = UDim2.new(0, 113, 0, 41)
+RocketRide.Font = Enum.Font.GothamBlack
+RocketRide.Text = "Rocket-Ride"
+RocketRide.TextColor3 = Color3.fromRGB(255, 255, 255)
+RocketRide.TextSize = 14.000
+
+AntiFling.Name = "Anti-Fling"
+AntiFling.Parent = TogglesPage
+AntiFling.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+AntiFling.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AntiFling.BorderSizePixel = 0
+AntiFling.Position = UDim2.new(0.330697596, 0, 0.828999996, 0)
+AntiFling.Size = UDim2.new(0, 113, 0, 41)
+AntiFling.Font = Enum.Font.GothamBlack
+AntiFling.Text = "Anti-Fling"
+AntiFling.TextColor3 = Color3.fromRGB(255, 255, 255)
+AntiFling.TextSize = 14.000
+
+HighJump.Name = "High Jump"
+HighJump.Parent = TogglesPage
+HighJump.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+HighJump.BorderColor3 = Color3.fromRGB(0, 0, 0)
+HighJump.BorderSizePixel = 0
+HighJump.Position = UDim2.new(0.0177002549, 0, 0.828999996, 0)
+HighJump.Size = UDim2.new(0, 113, 0, 41)
+HighJump.Font = Enum.Font.GothamBlack
+HighJump.Text = "High Jump"
+HighJump.TextColor3 = Color3.fromRGB(255, 255, 255)
+HighJump.TextSize = 14.000
+
+HomePage.Name = "HomePage"
+HomePage.Parent = Pages
+HomePage.Active = true
+HomePage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HomePage.BackgroundTransparency = 1.000
+HomePage.BorderColor3 = Color3.fromRGB(0, 0, 0)
+HomePage.BorderSizePixel = 0
+HomePage.Position = UDim2.new(0, 0, -0.0289855078, 0)
+HomePage.Size = UDim2.new(1, 0, 1.0869565, 0)
+HomePage.CanvasSize = UDim2.new(0, 0, 0, 0)
+HomePage.ScrollBarThickness = 6
+
+NameFrame.Name = "NameFrame"
+NameFrame.Parent = HomePage
+NameFrame.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+NameFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+NameFrame.BorderSizePixel = 0
+NameFrame.Position = UDim2.new(0.0185676385, 0, 0.601911306, 0)
+NameFrame.Size = UDim2.new(0, 220, 0, 42)
+
+UICorner_13.Parent = NameFrame
+
+RankIcon.Name = "RankIcon"
+RankIcon.Parent = NameFrame
+RankIcon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RankIcon.BackgroundTransparency = 1.000
+RankIcon.BorderColor3 = Color3.fromRGB(0, 0, 0)
+RankIcon.BorderSizePixel = 0
+RankIcon.Position = UDim2.new(0.0373929143, 0, 0.119047619, 0)
+RankIcon.Size = UDim2.new(0, 29, 0, 29)
+RankIcon.Image = "rbxassetid://2795572800"
+
+PlayerName.Name = "PlayerName"
+PlayerName.Parent = NameFrame
+PlayerName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PlayerName.BackgroundTransparency = 1.000
+PlayerName.BorderColor3 = Color3.fromRGB(0, 0, 0)
+PlayerName.BorderSizePixel = 0
+PlayerName.Position = UDim2.new(0.245111644, 0, 0.021493094, 0)
+PlayerName.Size = UDim2.new(0, 165, 0, 40)
+PlayerName.Font = Enum.Font.GothamBlack
+PlayerName.Text = ""
+PlayerName.TextColor3 = Color3.fromRGB(255, 255, 255)
+PlayerName.TextSize = 20.000
+PlayerName.TextWrapped = true
+
+RankFrame.Name = "RankFrame"
+RankFrame.Parent = HomePage
+RankFrame.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+RankFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+RankFrame.BorderSizePixel = 0
+RankFrame.Position = UDim2.new(0.0212201588, 0, 0.771911323, 0)
+RankFrame.Size = UDim2.new(0, 220, 0, 42)
+
+UICorner_14.Parent = RankFrame
+
+RankIcon_2.Name = "RankIcon"
+RankIcon_2.Parent = RankFrame
+RankIcon_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RankIcon_2.BackgroundTransparency = 1.000
+RankIcon_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+RankIcon_2.BorderSizePixel = 0
+RankIcon_2.Position = UDim2.new(0.0283018872, 0, 0.142857149, 0)
+RankIcon_2.Size = UDim2.new(0, 31, 0, 29)
+RankIcon_2.Image = "rbxassetid://8406515325"
+
+RankName.Name = "RankName"
+RankName.Parent = RankFrame
+RankName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RankName.BackgroundTransparency = 1.000
+RankName.BorderColor3 = Color3.fromRGB(0, 0, 0)
+RankName.BorderSizePixel = 0
+RankName.Position = UDim2.new(0.240566179, 0, 0.0691121444, 0)
+RankName.Size = UDim2.new(0, 165, 0, 36)
+RankName.Font = Enum.Font.GothamBlack
+RankName.Text = "Rank :"
+RankName.TextColor3 = Color3.fromRGB(255, 255, 255)
+RankName.TextSize = 20.000
+RankName.TextWrapped = true
+
+Report.Name = "Report"
+Report.Parent = HomePage
+Report.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Report.BackgroundTransparency = 0.900
+Report.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Report.BorderSizePixel = 0
+Report.Position = UDim2.new(0.663129985, 0, 0.637236953, 0)
+Report.Size = UDim2.new(0, 122, 0, 92)
+
+Line.Name = "Line"
+Line.Parent = Report
+Line.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Line.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Line.BorderSizePixel = 0
+Line.Position = UDim2.new(0.0655737668, 0, 0.227401763, 0)
+Line.Size = UDim2.new(0, 106, 0, 3)
+
+UICorner_15.Parent = Line
+
+ReportTitle.Name = "Report Title"
+ReportTitle.Parent = Report
+ReportTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ReportTitle.BackgroundTransparency = 1.000
+ReportTitle.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ReportTitle.BorderSizePixel = 0
+ReportTitle.Size = UDim2.new(0, 122, 0, 20)
+ReportTitle.Font = Enum.Font.SourceSansSemibold
+ReportTitle.Text = "Report Features"
+ReportTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+ReportTitle.TextScaled = true
+ReportTitle.TextSize = 14.000
+ReportTitle.TextWrapped = true
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.70, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(126, 126, 126))}
+UIGradient.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(0.96, 0.67), NumberSequenceKeypoint.new(1.00, 0.00)}
+UIGradient.Parent = ReportTitle
+
+ReportFrame.Name = "ReportFrame"
+ReportFrame.Parent = Report
+ReportFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ReportFrame.BackgroundTransparency = 1.000
+ReportFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ReportFrame.BorderSizePixel = 0
+ReportFrame.Position = UDim2.new(0, 0, 0.257731944, 0)
+ReportFrame.Size = UDim2.new(0, 122, 0, 72)
+
+UIListLayout.Parent = ReportFrame
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+
+Discord.Name = "Discord"
+Discord.Parent = ReportFrame
+Discord.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Discord.BackgroundTransparency = 1.000
+Discord.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Discord.BorderSizePixel = 0
+Discord.Size = UDim2.new(0, 122, 0, 24)
+Discord.Font = Enum.Font.SourceSansBold
+Discord.Text = "discord.gg/swaggest"
+Discord.TextColor3 = Color3.fromRGB(255, 255, 255)
+Discord.TextSize = 14.000
+
+any.Name = "any"
+any.Parent = ReportFrame
+any.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+any.BackgroundTransparency = 1.000
+any.BorderColor3 = Color3.fromRGB(0, 0, 0)
+any.BorderSizePixel = 0
+any.Size = UDim2.new(0, 122, 0, 24)
+any.Font = Enum.Font.SourceSansBold
+any.Text = "Or"
+any.TextColor3 = Color3.fromRGB(255, 255, 255)
+any.TextSize = 14.000
+
+User.Name = "User"
+User.Parent = ReportFrame
+User.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+User.BackgroundTransparency = 1.000
+User.BorderColor3 = Color3.fromRGB(0, 0, 0)
+User.BorderSizePixel = 0
+User.Position = UDim2.new(0, 0, 0.666666687, 0)
+User.Size = UDim2.new(0, 122, 0, 19)
+User.Font = Enum.Font.SourceSansBold
+User.Text = "Lerk#7643"
+User.TextColor3 = Color3.fromRGB(255, 255, 255)
+User.TextSize = 14.000
+
+Update.Name = "Update"
+Update.Parent = HomePage
+Update.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Update.BackgroundTransparency = 0.900
+Update.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Update.BorderSizePixel = 0
+Update.Position = UDim2.new(0.663129985, 0, 0.0233333334, 0)
+Update.Size = UDim2.new(0, 122, 0, 178)
+
+Line_2.Name = "Line"
+Line_2.Parent = Update
+Line_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Line_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Line_2.BorderSizePixel = 0
+Line_2.Position = UDim2.new(0.0655737668, 0, 0.105601683, 0)
+Line_2.Size = UDim2.new(0, 106, 0, 3)
+
+UICorner_16.Parent = Line_2
+
+UpdateTitle.Name = "UpdateTitle"
+UpdateTitle.Parent = Update
+UpdateTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UpdateTitle.BackgroundTransparency = 1.000
+UpdateTitle.BorderColor3 = Color3.fromRGB(0, 0, 0)
+UpdateTitle.BorderSizePixel = 0
+UpdateTitle.Size = UDim2.new(0, 122, 0, 20)
+UpdateTitle.Font = Enum.Font.GothamMedium
+UpdateTitle.Text = "Update Log"
+UpdateTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+UpdateTitle.TextScaled = true
+UpdateTitle.TextSize = 14.000
+UpdateTitle.TextWrapped = true
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(126, 126, 126))}
+UIGradient_2.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(0.95, 0.67), NumberSequenceKeypoint.new(1.00, 0.00)}
+UIGradient_2.Parent = UpdateTitle
+
+UpdateScrollingList.Name = "UpdateScrollingList"
+UpdateScrollingList.Parent = Update
+UpdateScrollingList.Active = true
+UpdateScrollingList.BackgroundColor3 = Color3.fromRGB(41, 41, 41)
+UpdateScrollingList.BackgroundTransparency = 1.000
+UpdateScrollingList.BorderColor3 = Color3.fromRGB(0, 0, 0)
+UpdateScrollingList.BorderSizePixel = 0
+UpdateScrollingList.Position = UDim2.new(0, 0, 0.134831458, 0)
+UpdateScrollingList.Size = UDim2.new(0, 122, 0, 154)
+UpdateScrollingList.CanvasSize = UDim2.new(0, 122, 0, 99)
+UpdateScrollingList.ScrollBarThickness = 2
+
+UIListLayout_2.Parent = UpdateScrollingList
+UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+
+update.Name = "update"
+update.Parent = UpdateScrollingList
+update.BackgroundColor3 = Color3.fromRGB(41, 41, 41)
+update.BorderColor3 = Color3.fromRGB(0, 0, 0)
+update.BorderSizePixel = 0
+update.Size = UDim2.new(0, 122, 0, 33)
+update.Font = Enum.Font.SourceSansBold
+update.Text = "Added ServerHop, Katana, Buy Rifle"
+update.TextColor3 = Color3.fromRGB(255, 255, 255)
+update.TextSize = 14.000
+update.TextWrapped = true
+
+update_2.Name = "update"
+update_2.Parent = UpdateScrollingList
+update_2.BackgroundColor3 = Color3.fromRGB(41, 41, 41)
+update_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+update_2.BorderSizePixel = 0
+update_2.Size = UDim2.new(0, 122, 0, 33)
+update_2.Font = Enum.Font.SourceSansBold
+update_2.Text = "Keybind for settings Target {main scripts}"
+update_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+update_2.TextSize = 14.000
+update_2.TextWrapped = true
+
+update_3.Name = "update"
+update_3.Parent = UpdateScrollingList
+update_3.BackgroundColor3 = Color3.fromRGB(41, 41, 41)
+update_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+update_3.BorderSizePixel = 0
+update_3.Size = UDim2.new(0, 122, 0, 33)
+update_3.Font = Enum.Font.SourceSansBold
+update_3.Text = "Alternate Method to Knock and LoopKill"
+update_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+update_3.TextSize = 14.000
+update_3.TextWrapped = true
+
+PlayerImage.Name = "PlayerImage"
+PlayerImage.Parent = HomePage
+PlayerImage.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+PlayerImage.BorderColor3 = Color3.fromRGB(0, 0, 0)
+PlayerImage.BorderSizePixel = 0
+PlayerImage.Position = UDim2.new(0.148541078, 0, 0.138550699, 0)
+PlayerImage.Size = UDim2.new(0, 125, 0, 125)
+
+UICorner_17.Parent = PlayerImage
+
+TextLabel.Parent = HomePage
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0, 0, -0.00246373494, 0)
+TextLabel.Size = UDim2.new(0, 238, 0, 37)
+TextLabel.Font = Enum.Font.GothamBlack
+TextLabel.Text = "Welcome to Swag mode"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 18.000
+
+Homeline.Name = "Homeline"
+Homeline.Parent = HomePage
+Homeline.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+Homeline.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Homeline.BorderSizePixel = 0
+Homeline.Position = UDim2.new(0.631811798, 0, -0.00579709746, 0)
+Homeline.Size = UDim2.new(0.0127504552, 0, 1.00765944, 7)
+
+AimLockPage.Name = "AimLockPage"
+AimLockPage.Parent = Pages
+AimLockPage.Active = true
+AimLockPage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AimLockPage.BackgroundTransparency = 1.000
+AimLockPage.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AimLockPage.BorderSizePixel = 0
+AimLockPage.Size = UDim2.new(1, 0, 1, 0)
+AimLockPage.Visible = false
+AimLockPage.CanvasSize = UDim2.new(0, 0, 0, 0)
+AimLockPage.ScrollBarThickness = 6
+
+AntiLock.Name = "AntiLock"
+AntiLock.Parent = AimLockPage
+AntiLock.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+AntiLock.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AntiLock.BorderSizePixel = 0
+AntiLock.Position = UDim2.new(0.299128294, 0, 0.402014822, 0)
+AntiLock.Size = UDim2.new(0.395225465, 0, 0.097826086, 0)
+AntiLock.Font = Enum.Font.GothamBlack
+AntiLock.Text = "AntiLock [ C ]\\n[Beta Feature]"
+AntiLock.TextColor3 = Color3.fromRGB(255, 255, 255)
+AntiLock.TextSize = 14.000
+
+UICorner_18.Parent = AntiLock
+
+Elock.Name = "Elock"
+Elock.Parent = AimLockPage
+Elock.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+Elock.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Elock.BorderSizePixel = 0
+Elock.Position = UDim2.new(0.551117718, 0, 0.0188179705, 0)
+Elock.Size = UDim2.new(0, 134, 0, 41)
+Elock.Font = Enum.Font.GothamBlack
+Elock.Text = "E to Lock"
+Elock.TextColor3 = Color3.fromRGB(255, 255, 255)
+Elock.TextSize = 14.000
+
+UICorner_19.Parent = Elock
+
+SilentAim.Name = "SilentAim"
+SilentAim.Parent = AimLockPage
+SilentAim.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+SilentAim.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SilentAim.BorderSizePixel = 0
+SilentAim.Position = UDim2.new(0.121409431, 0, 0.0188179705, 0)
+SilentAim.Size = UDim2.new(0, 134, 0, 41)
+SilentAim.Font = Enum.Font.GothamBlack
+SilentAim.Text = "SilentAim"
+SilentAim.TextColor3 = Color3.fromRGB(255, 255, 255)
+SilentAim.TextSize = 14.000
+
+UICorner_20.Parent = SilentAim
+
+ChangeAimlock.Name = "ChangeAimlock"
+ChangeAimlock.Parent = AimLockPage
+ChangeAimlock.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+ChangeAimlock.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ChangeAimlock.BorderSizePixel = 0
+ChangeAimlock.Position = UDim2.new(0.511329889, 0, 0.279687494, 0)
+ChangeAimlock.Size = UDim2.new(0, 149, 0, 27)
+ChangeAimlock.Font = Enum.Font.GothamBlack
+ChangeAimlock.Text = "Change Aimlock Key"
+ChangeAimlock.TextColor3 = Color3.fromRGB(255, 255, 255)
+ChangeAimlock.TextSize = 14.000
+
+UICorner_21.Parent = ChangeAimlock
+
+HideTargetMarker.Name = "Hide Target Marker"
+HideTargetMarker.Parent = AimLockPage
+HideTargetMarker.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+HideTargetMarker.BorderColor3 = Color3.fromRGB(0, 0, 0)
+HideTargetMarker.BorderSizePixel = 0
+HideTargetMarker.Position = UDim2.new(0.0816216767, 0, 0.282449603, 0)
+HideTargetMarker.Size = UDim2.new(0, 149, 0, 27)
+HideTargetMarker.Font = Enum.Font.GothamBlack
+HideTargetMarker.Text = "Hide Target Marker"
+HideTargetMarker.TextColor3 = Color3.fromRGB(255, 255, 255)
+HideTargetMarker.TextSize = 14.000
+
+UICorner_22.Parent = HideTargetMarker
+
+AimType.Name = "AimType"
+AimType.Parent = AimLockPage
+AimType.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+AimType.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AimType.BorderSizePixel = 0
+AimType.Position = UDim2.new(0.511329889, 0, 0.526064336, 0)
+AimType.Size = UDim2.new(0.395225465, 0, 0.097826086, 0)
+AimType.Font = Enum.Font.GothamBold
+AimType.Text = "Type :"
+AimType.TextColor3 = Color3.fromRGB(255, 255, 255)
+AimType.TextSize = 14.000
+
+UICorner_23.Parent = AimType
+
+ChangeAiming.Name = "ChangeAiming"
+ChangeAiming.Parent = AimLockPage
+ChangeAiming.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+ChangeAiming.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ChangeAiming.BorderSizePixel = 0
+ChangeAiming.Position = UDim2.new(0.0816216767, 0, 0.533310711, 0)
+ChangeAiming.Size = UDim2.new(0.395225465, 0, 0.097826086, 0)
+ChangeAiming.Font = Enum.Font.GothamBlack
+ChangeAiming.Text = "Aim At : Head"
+ChangeAiming.TextColor3 = Color3.fromRGB(255, 255, 255)
+ChangeAiming.TextSize = 14.000
+
+UICorner_24.Parent = ChangeAiming
+
+PlayerEsp.Name = "PlayerEsp"
+PlayerEsp.Parent = AimLockPage
+PlayerEsp.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+PlayerEsp.BorderColor3 = Color3.fromRGB(0, 0, 0)
+PlayerEsp.BorderSizePixel = 0
+PlayerEsp.Position = UDim2.new(0.0550964549, 0, 0.794180274, 0)
+PlayerEsp.Size = UDim2.new(0, 134, 0, 41)
+PlayerEsp.Font = Enum.Font.GothamBlack
+PlayerEsp.Text = "Player ESP"
+PlayerEsp.TextColor3 = Color3.fromRGB(255, 255, 255)
+PlayerEsp.TextSize = 14.000
+
+UICorner_25.Parent = PlayerEsp
+
+Blue.Name = "Blue"
+Blue.Parent = AimLockPage
+Blue.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+Blue.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Blue.BorderSizePixel = 0
+Blue.Position = UDim2.new(0.463584512, 0, 0.743455648, 0)
+Blue.Size = UDim2.new(0, 90, 0, 19)
+Blue.Font = Enum.Font.GothamBlack
+Blue.Text = "Blue"
+Blue.TextColor3 = Color3.fromRGB(255, 255, 255)
+Blue.TextSize = 14.000
+
+UICorner_26.Parent = Blue
+
+Green.Name = "Green"
+Green.Parent = AimLockPage
+Green.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+Green.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Green.BorderSizePixel = 0
+Green.Position = UDim2.new(0.58294791, 0, 0.823165774, 0)
+Green.Size = UDim2.new(0, 90, 0, 19)
+Green.Font = Enum.Font.GothamBlack
+Green.Text = "Green"
+Green.TextColor3 = Color3.fromRGB(255, 255, 255)
+Green.TextSize = 14.000
+
+UICorner_27.Parent = Green
+
+Red.Name = "Red"
+Red.Parent = AimLockPage
+Red.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+Red.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Red.BorderSizePixel = 0
+Red.Position = UDim2.new(0.718226433, 0, 0.743455648, 0)
+Red.Size = UDim2.new(0, 90, 0, 19)
+Red.Font = Enum.Font.GothamBlack
+Red.Text = "Red"
+Red.TextColor3 = Color3.fromRGB(255, 255, 255)
+Red.TextSize = 14.000
+
+UICorner_28.Parent = Red
+
+TextBox.Parent = AimLockPage
+TextBox.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0.447669387, 0, 0.920380771, 0)
+TextBox.Size = UDim2.new(0, 192, 0, 25)
+TextBox.Font = Enum.Font.GothamBold
+TextBox.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.PlaceholderText = "[Custom Color] - (R,G,B)"
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.TextSize = 14.000
+
+QuickBuyPage.Name = "QuickBuyPage"
+QuickBuyPage.Parent = Pages
+QuickBuyPage.Active = true
+QuickBuyPage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+QuickBuyPage.BackgroundTransparency = 1.000
+QuickBuyPage.BorderColor3 = Color3.fromRGB(0, 0, 0)
+QuickBuyPage.BorderSizePixel = 0
+QuickBuyPage.Position = UDim2.new(0, 0, 5.52854686e-08, 0)
+QuickBuyPage.Size = UDim2.new(1, 0, 1, 0)
+QuickBuyPage.Visible = false
+QuickBuyPage.CanvasSize = UDim2.new(0, 0, 3.23000002, 0)
+QuickBuyPage.ScrollBarThickness = 6
+
+Gun.Name = "Gun"
+Gun.Parent = QuickBuyPage
+Gun.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Gun.BackgroundTransparency = 1.000
+Gun.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Gun.BorderSizePixel = 0
+Gun.Size = UDim2.new(1, 0, 0, 27)
+Gun.Font = Enum.Font.GothamBlack
+Gun.Text = "[ Guns ]"
+Gun.TextColor3 = Color3.fromRGB(255, 255, 255)
+Gun.TextSize = 20.000
+
+Melee.Name = "Melee"
+Melee.Parent = QuickBuyPage
+Melee.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Melee.BackgroundTransparency = 1.000
+Melee.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Melee.BorderSizePixel = 0
+Melee.Position = UDim2.new(0, 0, 0.284066886, 0)
+Melee.Size = UDim2.new(1, 0, 0, 38)
+Melee.Font = Enum.Font.GothamBlack
+Melee.Text = "[ Melee ]"
+Melee.TextColor3 = Color3.fromRGB(255, 255, 255)
+Melee.TextSize = 20.000
+
+FoodLabel.Name = "Food Label"
+FoodLabel.Parent = QuickBuyPage
+FoodLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FoodLabel.BackgroundTransparency = 1.000
+FoodLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FoodLabel.BorderSizePixel = 0
+FoodLabel.Position = UDim2.new(0, 0, 0.452281594, 0)
+FoodLabel.Size = UDim2.new(1, 0, 0, 38)
+FoodLabel.Font = Enum.Font.GothamBlack
+FoodLabel.Text = "[ Food ]"
+FoodLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+FoodLabel.TextSize = 20.000
+
+ExtraLabel_2.Name = "Extra Label"
+ExtraLabel_2.Parent = QuickBuyPage
+ExtraLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExtraLabel_2.BackgroundTransparency = 1.000
+ExtraLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ExtraLabel_2.BorderSizePixel = 0
+ExtraLabel_2.Position = UDim2.new(0, 0, 0.642792463, 0)
+ExtraLabel_2.Size = UDim2.new(1, 0, 0, 38)
+ExtraLabel_2.Font = Enum.Font.GothamBlack
+ExtraLabel_2.Text = "[ Other ]"
+ExtraLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExtraLabel_2.TextSize = 20.000
+
+QuickTpPage.Name = "QuickTpPage"
+QuickTpPage.Parent = Pages
+QuickTpPage.Active = true
+QuickTpPage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+QuickTpPage.BackgroundTransparency = 1.000
+QuickTpPage.BorderColor3 = Color3.fromRGB(0, 0, 0)
+QuickTpPage.BorderSizePixel = 0
+QuickTpPage.Position = UDim2.new(0, 0, 5.52854686e-08, 0)
+QuickTpPage.Size = UDim2.new(1, 0, 1, 0)
+QuickTpPage.Visible = false
+QuickTpPage.CanvasSize = UDim2.new(0, 0, 1.95000005, 0)
+QuickTpPage.ScrollBarThickness = 6
+
+NotLocationsLabel.Name = "NotLocations Label"
+NotLocationsLabel.Parent = QuickTpPage
+NotLocationsLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NotLocationsLabel.BackgroundTransparency = 1.000
+NotLocationsLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+NotLocationsLabel.BorderSizePixel = 0
+NotLocationsLabel.Size = UDim2.new(1, 0, 0, 27)
+NotLocationsLabel.Font = Enum.Font.GothamBlack
+NotLocationsLabel.Text = "[ Not Locations ]"
+NotLocationsLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+NotLocationsLabel.TextSize = 20.000
+
+LocationsLabel.Name = "Locations Label"
+LocationsLabel.Parent = QuickTpPage
+LocationsLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LocationsLabel.BackgroundTransparency = 1.000
+LocationsLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+LocationsLabel.BorderSizePixel = 0
+LocationsLabel.Position = UDim2.new(0, 0, 0.237981051, 0)
+LocationsLabel.Size = UDim2.new(1, 0, 0, 38)
+LocationsLabel.Font = Enum.Font.GothamBlack
+LocationsLabel.Text = "[ Locations ]"
+LocationsLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+LocationsLabel.TextSize = 20.000
+
+NotLocations.Name = "NotLocations"
+NotLocations.Parent = QuickTpPage
+NotLocations.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NotLocations.BackgroundTransparency = 2.000
+NotLocations.BorderColor3 = Color3.fromRGB(0, 0, 0)
+NotLocations.BorderSizePixel = 0
+NotLocations.Position = UDim2.new(0, 0, 0.0835913345, 0)
+NotLocations.Size = UDim2.new(1, 0, 0, 80)
+
+SavePos.Name = "SavePos"
+SavePos.Parent = NotLocations
+SavePos.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+SavePos.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SavePos.BorderSizePixel = 0
+SavePos.Position = UDim2.new(0.233327433, 0, -0.232519925, 0)
+SavePos.Size = UDim2.new(0, 94, 0, 46)
+SavePos.Font = Enum.Font.GothamBlack
+SavePos.Text = "SavePos"
+SavePos.TextColor3 = Color3.fromRGB(255, 255, 255)
+SavePos.TextSize = 14.000
+
+SoundBoardPage.Name = "SoundBoardPage"
+SoundBoardPage.Parent = Pages
+SoundBoardPage.Active = true
+SoundBoardPage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SoundBoardPage.BackgroundTransparency = 1.000
+SoundBoardPage.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SoundBoardPage.BorderSizePixel = 0
+SoundBoardPage.Size = UDim2.new(1, 0, 1.03623188, 0)
+SoundBoardPage.Visible = false
+SoundBoardPage.CanvasSize = UDim2.new(0, 0, 0, 0)
+SoundBoardPage.ScrollBarThickness = 6
+
+AudioBoard.Name = "AudioBoard"
+AudioBoard.Parent = SoundBoardPage
+AudioBoard.Active = true
+AudioBoard.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+AudioBoard.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AudioBoard.BorderSizePixel = 0
+AudioBoard.Position = UDim2.new(0.03183024, 0, 0.101398602, 0)
+AudioBoard.Size = UDim2.new(0.944297075, 0, 0.744842827, 0)
+AudioBoard.Visible = false
+AudioBoard.CanvasSize = UDim2.new(0, 0, 0, 0)
+
+CancelSound.Name = "CancelSound"
+CancelSound.Parent = AudioBoard
+CancelSound.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+CancelSound.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CancelSound.BorderSizePixel = 0
+CancelSound.Position = UDim2.new(0.0533707887, 0, 0.680065632, 0)
+CancelSound.Size = UDim2.new(0.438202262, 0, 0.199119046, 0)
+CancelSound.Font = Enum.Font.GothamBlack
+CancelSound.Text = "Cancel"
+CancelSound.TextColor3 = Color3.fromRGB(255, 255, 255)
+CancelSound.TextSize = 20.000
+
+ConfirmSound.Name = "ConfirmSound"
+ConfirmSound.Parent = AudioBoard
+ConfirmSound.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+ConfirmSound.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ConfirmSound.BorderSizePixel = 0
+ConfirmSound.Position = UDim2.new(0.508426964, 0, 0.680065632, 0)
+ConfirmSound.Size = UDim2.new(0.432584256, 0, 0.199119046, 0)
+ConfirmSound.Font = Enum.Font.GothamBlack
+ConfirmSound.Text = "Confirm"
+ConfirmSound.TextColor3 = Color3.fromRGB(255, 255, 255)
+ConfirmSound.TextSize = 20.000
+
+AudioIDSound.Name = "AudioIDSound"
+AudioIDSound.Parent = AudioBoard
+AudioIDSound.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+AudioIDSound.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AudioIDSound.BorderSizePixel = 0
+AudioIDSound.Position = UDim2.new(0.117977522, 0, 0.380237013, 0)
+AudioIDSound.Size = UDim2.new(0.761235952, 0, 0.23471418, 0)
+AudioIDSound.Font = Enum.Font.SourceSans
+AudioIDSound.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+AudioIDSound.PlaceholderText = "Audio ID here"
+AudioIDSound.Text = ""
+AudioIDSound.TextColor3 = Color3.fromRGB(255, 255, 255)
+AudioIDSound.TextSize = 25.000
+
+AudioNameSound.Name = "AudioNameSound"
+AudioNameSound.Parent = AudioBoard
+AudioNameSound.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+AudioNameSound.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AudioNameSound.BorderSizePixel = 0
+AudioNameSound.Position = UDim2.new(0.117977522, 0, 0.0985800102, 0)
+AudioNameSound.Size = UDim2.new(0.761235952, 0, 0.23471418, 0)
+AudioNameSound.Font = Enum.Font.SourceSans
+AudioNameSound.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+AudioNameSound.PlaceholderText = "Audio name here"
+AudioNameSound.Text = ""
+AudioNameSound.TextColor3 = Color3.fromRGB(0, 0, 0)
+AudioNameSound.TextSize = 25.000
+
+CheckingBoombox.Name = "CheckingBoombox"
+CheckingBoombox.Parent = SoundBoardPage
+CheckingBoombox.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+CheckingBoombox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CheckingBoombox.BorderSizePixel = 0
+CheckingBoombox.Size = UDim2.new(1.00319409, 0, 0.973983467, 0)
+CheckingBoombox.Visible = false
+
+TextLabel_2.Parent = CheckingBoombox
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.241847828, 0, 0.394889057, 0)
+TextLabel_2.Size = UDim2.new(0.543478251, 0, 0.179495022, 0)
+TextLabel_2.Font = Enum.Font.ArialBold
+TextLabel_2.Text = "Checking for Boombox . . ."
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 14.000
+
+SoundCollection.Name = "SoundCollection"
+SoundCollection.Parent = SoundBoardPage
+SoundCollection.Active = true
+SoundCollection.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+SoundCollection.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SoundCollection.BorderSizePixel = 0
+SoundCollection.Position = UDim2.new(0.03183024, 0, 0.101398602, 0)
+SoundCollection.Size = UDim2.new(0.944297075, 0, 0.744842827, 0)
+SoundCollection.CanvasSize = UDim2.new(0, 0, 0, 0)
+
+UIListLayout_3.Parent = SoundCollection
+UIListLayout_3.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_3.Padding = UDim.new(0, 2)
+
+TextLabel_3.Parent = SoundBoardPage
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0.190981433, 0, 0.0104896165, 0)
+TextLabel_3.Size = UDim2.new(0.62095499, 0, 0.0884787515, 0)
+TextLabel_3.Font = Enum.Font.GothamBlack
+TextLabel_3.Text = "Sound Board"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+NewAudio.Name = "NewAudio"
+NewAudio.Parent = SoundBoardPage
+NewAudio.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+NewAudio.BorderColor3 = Color3.fromRGB(0, 0, 0)
+NewAudio.BorderSizePixel = 0
+NewAudio.Position = UDim2.new(0.0320000015, 0, 0.878000021, 0)
+NewAudio.Size = UDim2.new(0.469000012, 0, 0.0960000008, 0)
+NewAudio.Font = Enum.Font.Highway
+NewAudio.Text = "Add New Audio"
+NewAudio.TextColor3 = Color3.fromRGB(255, 255, 255)
+NewAudio.TextScaled = true
+NewAudio.TextSize = 14.000
+NewAudio.TextWrapped = true
+
+Enabled.Name = "Enabled"
+Enabled.Parent = SoundBoardPage
+Enabled.BackgroundColor3 = Color3.fromRGB(25, 255, 25)
+Enabled.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Enabled.BorderSizePixel = 0
+Enabled.Position = UDim2.new(0.782493353, 0, 0.874550581, 0)
+Enabled.Size = UDim2.new(0.193633959, 0, 0.0957935974, 0)
+Enabled.Font = Enum.Font.Highway
+Enabled.Text = "Enabled"
+Enabled.TextColor3 = Color3.fromRGB(0, 0, 0)
+Enabled.TextSize = 18.000
+
+Caps.Name = "Caps"
+Caps.Parent = SoundBoardPage
+Caps.BackgroundColor3 = Color3.fromRGB(25, 255, 25)
+Caps.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Caps.BorderSizePixel = 0
+Caps.Position = UDim2.new(0.533156514, 0, 0.874550581, 0)
+Caps.Size = UDim2.new(0.220424503, 0, 0.0957935974, 0)
+Caps.Font = Enum.Font.Highway
+Caps.Text = "Exact Caps"
+Caps.TextColor3 = Color3.fromRGB(0, 0, 0)
+Caps.TextSize = 18.000
+Caps.TextWrapped = true
+
+TargetMenuFrame.Name = "TargetMenuFrame"
+TargetMenuFrame.Parent = SwagmodeFrame
+TargetMenuFrame.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+TargetMenuFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TargetMenuFrame.BorderSizePixel = 0
+TargetMenuFrame.Position = UDim2.new(0, 549, 0, 0)
+TargetMenuFrame.Size = UDim2.new(0, 125, 0, 307)
+
+Contents.Name = "Contents"
+Contents.Parent = TargetMenuFrame
+Contents.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Contents.BackgroundTransparency = 1.000
+Contents.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Contents.BorderSizePixel = 0
+Contents.Position = UDim2.new(9.76562546e-07, 0, 0.0208232272, 0)
+Contents.Size = UDim2.new(0, 115, 0, 295)
+
+CaaTargetTextbox.Name = "CaaTargetTextbox"
+CaaTargetTextbox.Parent = Contents
+CaaTargetTextbox.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+CaaTargetTextbox.BorderColor3 = Color3.fromRGB(10, 10, 10)
+CaaTargetTextbox.BorderSizePixel = 7
+CaaTargetTextbox.Position = UDim2.new(0, 0, 0.448185086, 0)
+CaaTargetTextbox.Size = UDim2.new(1, 0, -0.04910383, 50)
+CaaTargetTextbox.Font = Enum.Font.GothamBlack
+CaaTargetTextbox.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+CaaTargetTextbox.PlaceholderText = "Display/User"
+CaaTargetTextbox.Text = ""
+CaaTargetTextbox.TextColor3 = Color3.fromRGB(255, 255, 255)
+CaaTargetTextbox.TextScaled = true
+CaaTargetTextbox.TextSize = 14.000
+CaaTargetTextbox.TextWrapped = true
+
+ZCrew.Name = "ZCrew"
+ZCrew.Parent = Contents
+ZCrew.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+ZCrew.BorderColor3 = Color3.fromRGB(10, 10, 10)
+ZCrew.BorderSizePixel = 7
+ZCrew.Position = UDim2.new(0, 0, 0.881356537, 0)
+ZCrew.Size = UDim2.new(1, 0, -0.04910383, 50)
+ZCrew.Font = Enum.Font.GothamBlack
+ZCrew.Text = "Crew : None"
+ZCrew.TextColor3 = Color3.fromRGB(80, 80, 80)
+ZCrew.TextSize = 14.000
+
+Cash.Name = "Cash"
+Cash.Parent = Contents
+Cash.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+Cash.BorderColor3 = Color3.fromRGB(10, 10, 10)
+Cash.BorderSizePixel = 7
+Cash.Position = UDim2.new(0, 0, 0.592717171, 0)
+Cash.Size = UDim2.new(1, 0, -0.0493163429, 50)
+Cash.Font = Enum.Font.GothamBlack
+Cash.Text = ""
+Cash.TextColor3 = Color3.fromRGB(80, 80, 80)
+Cash.TextSize = 14.000
+
+DBounty.Name = "DBounty"
+DBounty.Parent = Contents
+DBounty.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+DBounty.BorderColor3 = Color3.fromRGB(10, 10, 10)
+DBounty.BorderSizePixel = 7
+DBounty.Position = UDim2.new(0, 0, 0.737036884, 0)
+DBounty.Size = UDim2.new(1, 0, -0.0493163429, 50)
+DBounty.Font = Enum.Font.GothamBlack
+DBounty.Text = ""
+DBounty.TextColor3 = Color3.fromRGB(80, 80, 80)
+DBounty.TextSize = 14.000
+
+BTargetImage.Name = "BTargetImage"
+BTargetImage.Parent = Contents
+BTargetImage.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+BTargetImage.BorderColor3 = Color3.fromRGB(0, 0, 0)
+BTargetImage.BorderSizePixel = 0
+BTargetImage.Position = UDim2.new(0.0566966347, 0, 0.027602911, 0)
+BTargetImage.Size = UDim2.new(0, 110, 0, 110)
+BTargetImage.ImageColor3 = Color3.fromRGB(300, 300, 300)
+
+UICorner_29.CornerRadius = UDim.new(0, 500)
+UICorner_29.Parent = BTargetImage
+
+Edge1.Name = "Edge1"
+Edge1.Parent = TargetMenuFrame
+Edge1.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+Edge1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Edge1.BorderSizePixel = 0
+Edge1.Position = UDim2.new(0.930999994, 0, 0, 0)
+Edge1.Size = UDim2.new(0.069002457, 0, 0.977198601, 7)
+
+Edge2.Name = "Edge2"
+Edge2.Parent = TargetMenuFrame
+Edge2.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+Edge2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Edge2.BorderSizePixel = 0
+Edge2.Position = UDim2.new(0, 0, 0.983411133, 0)
+Edge2.Size = UDim2.new(1, 0, 0.000588581723, 7)
+
+Edge3.Name = "Edge3"
+Edge3.Parent = TargetMenuFrame
+Edge3.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+Edge3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Edge3.BorderSizePixel = 0
+Edge3.Size = UDim2.new(1, 0, 0, 7)
+
+DropShadowHolder.Name = "DropShadowHolder"
+DropShadowHolder.Parent = SwagmodeFrame
+DropShadowHolder.BorderColor3 = Color3.fromRGB(0, 0, 0)
+DropShadowHolder.BorderSizePixel = 0
+DropShadowHolder.Size = UDim2.new(1, 0, 1, 0)
+DropShadowHolder.ZIndex = -12345
+
+ShadowHolder.Name = "ShadowHolder"
+ShadowHolder.Parent = DropShadowHolder
+ShadowHolder.AnchorPoint = Vector2.new(0, 0.5)
+ShadowHolder.BackgroundTransparency = 1.000
+ShadowHolder.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ShadowHolder.BorderSizePixel = 0
+ShadowHolder.Position = UDim2.new(-0.0500000231, 0, 0.501477957, 0)
+ShadowHolder.Size = UDim2.new(1.2396965, 47, 1.02249992, 47)
+ShadowHolder.ZIndex = -67562
+ShadowHolder.Image = "rbxassetid://6015897843"
+ShadowHolder.ImageColor3 = Color3.fromRGB(0, 0, 0)
+ShadowHolder.ScaleType = Enum.ScaleType.Slice
+ShadowHolder.SliceCenter = Rect.new(49, 49, 450, 450)
+
+Edge1_2.Name = "Edge1"
+Edge1_2.Parent = SwagmodeFrame
+Edge1_2.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+Edge1_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Edge1_2.BorderSizePixel = 0
+Edge1_2.Size = UDim2.new(1, 0, 0, 7)
+
+Edge2_2.Name = "Edge2"
+Edge2_2.Parent = SwagmodeFrame
+Edge2_2.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+Edge2_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Edge2_2.BorderSizePixel = 0
+Edge2_2.Position = UDim2.new(-0.00182145834, 0, 0, 0)
+Edge2_2.Size = UDim2.new(0.0127504552, 0, 0.977198601, 7)
+
+Edge3_2.Name = "Edge3"
+Edge3_2.Parent = SwagmodeFrame
+Edge3_2.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+Edge3_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Edge3_2.BorderSizePixel = 0
+Edge3_2.Position = UDim2.new(0, 0, 0.984000027, 0)
+Edge3_2.Size = UDim2.new(1, 0, 0, 7)
+
+Edge4.Name = "Edge4"
+Edge4.Parent = SwagmodeFrame
+Edge4.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+Edge4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Edge4.BorderSizePixel = 0
+Edge4.Position = UDim2.new(0.987249553, 0, 0, 0)
+Edge4.Size = UDim2.new(0.0127504552, 0, 0.977198601, 7)
+
+Notch.Name = "Notch"
+Notch.Parent = SwagmodeFrame
+Notch.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Notch.BackgroundTransparency = 1.000
+Notch.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Notch.BorderSizePixel = 0
+Notch.Position = UDim2.new(0.925318778, 0, 0.0307008829, 0)
+Notch.Size = UDim2.new(0, 34, 0, 292)
+
+Corner.Name = "Corner"
+Corner.Parent = Notch
+Corner.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+Corner.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Corner.BorderSizePixel = 0
+Corner.Position = UDim2.new(0.266093254, 0, 0.217571631, 0)
+Corner.Size = UDim2.new(0, 31, 0, 68)
+
+Corner_2.Name = "Corner"
+Corner_2.Parent = Notch
+Corner_2.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+Corner_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Corner_2.BorderSizePixel = 0
+Corner_2.Position = UDim2.new(0.266093254, 0, 0.595421791, 0)
+Corner_2.Size = UDim2.new(0, 31, 0, 49)
+
+UICorner_30.Parent = Corner_2
+
+Middle.Name = "Middle"
+Middle.Parent = Notch
+Middle.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+Middle.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Middle.BorderSizePixel = 0
+Middle.Position = UDim2.new(0.266093254, 0, 0.403239489, 0)
+Middle.Size = UDim2.new(0, 31, 0, 71)
+
+Info.Name = "Info"
+Info.Parent = Notch
+Info.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Info.BackgroundTransparency = 1.000
+Info.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Info.Position = UDim2.new(0.382352948, 0, 0.637160659, 0)
+Info.Size = UDim2.new(0, 23, 0, 23)
+Info.ZIndex = 33
+Info.Image = "rbxassetid://7240077769"
+
+Prem.Name = "Prem"
+Prem.Parent = Notch
+Prem.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Prem.BackgroundTransparency = 1.000
+Prem.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Prem.BorderSizePixel = 0
+Prem.Position = UDim2.new(0.411764711, 0, 0.541270256, 0)
+Prem.Size = UDim2.new(0, 20, 0, 21)
+Prem.Image = "rbxassetid://6762188588"
+
+QuickView.Name = "QuickView"
+QuickView.Parent = Notch
+QuickView.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+QuickView.BackgroundTransparency = 1.000
+QuickView.BorderColor3 = Color3.fromRGB(0, 0, 0)
+QuickView.BorderSizePixel = 0
+QuickView.Position = UDim2.new(0.382352948, 0, 0.445379794, 0)
+QuickView.Size = UDim2.new(0, 23, 0, 23)
+QuickView.Image = "rbxassetid://4656685599"
+
+ImageButton.Parent = Notch
+ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageButton.BackgroundTransparency = 1.000
+ImageButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageButton.BorderSizePixel = 0
+ImageButton.Position = UDim2.new(0.441176474, 0, 0.366612673, 0)
+ImageButton.Size = UDim2.new(0, 18, 0, 20)
+ImageButton.Image = "rbxassetid://302250236"
+
+ImageButton_2.Parent = Notch
+ImageButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageButton_2.BackgroundTransparency = 1.000
+ImageButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageButton_2.BorderSizePixel = 0
+ImageButton_2.Position = UDim2.new(0.352941185, 0, 0.260448307, 0)
+ImageButton_2.Size = UDim2.new(0, 23, 0, 23)
+ImageButton_2.Image = "rbxassetid://8099668652"
+
+MenuFrame.Name = "MenuFrame"
+MenuFrame.Parent = SwagmodeFrame
+MenuFrame.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+MenuFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MenuFrame.BorderSizePixel = 0
+MenuFrame.Position = UDim2.new(0.00699997647, 0, 0, 0)
+MenuFrame.Size = UDim2.new(0, 135, 0, 307)
+
+SwagMode.Name = "SwagMode"
+SwagMode.Parent = MenuFrame
+SwagMode.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SwagMode.BackgroundTransparency = 1.000
+SwagMode.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SwagMode.BorderSizePixel = 0
+SwagMode.Position = UDim2.new(0.0258065127, 0, 0, 0)
+SwagMode.Size = UDim2.new(0, 122, 0, 34)
+SwagMode.Font = Enum.Font.GothamBold
+SwagMode.Text = "SWAGMODE"
+SwagMode.TextColor3 = Color3.fromRGB(255, 255, 255)
+SwagMode.TextSize = 20.000
+
+UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(31, 31, 61)), ColorSequenceKeypoint.new(0.80, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_3.Offset = Vector2.new(0.100000001, 0)
+UIGradient_3.Rotation = 179.83233642578125
+UIGradient_3.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(0.10, 0.26), NumberSequenceKeypoint.new(1.00, 0.00)}
+UIGradient_3.Parent = SwagMode
+
+UnderLine.Name = "UnderLine"
+UnderLine.Parent = MenuFrame
+UnderLine.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UnderLine.BorderColor3 = Color3.fromRGB(0, 0, 0)
+UnderLine.BorderSizePixel = 0
+UnderLine.Position = UDim2.new(0.0258065127, 0, 0.0987765566, 0)
+UnderLine.Size = UDim2.new(0, 122, 0, 3)
+
+TabsFrame.Name = "TabsFrame"
+TabsFrame.Parent = MenuFrame
+TabsFrame.Active = true
+TabsFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TabsFrame.BackgroundTransparency = 1.000
+TabsFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TabsFrame.BorderSizePixel = 0
+TabsFrame.Position = UDim2.new(0.025806427, 0, 0.127035826, 0)
+TabsFrame.Size = UDim2.new(0, 134, 0, 262)
+TabsFrame.CanvasSize = UDim2.new(0, 0, 0, 0)
+TabsFrame.ScrollBarThickness = 6
+
+UIListLayout_4.Parent = TabsFrame
+UIListLayout_4.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_4.Padding = UDim.new(0, 6)
+
+UIListLayout_5.Parent = TabsFrame
+UIListLayout_5.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_5.Padding = UDim.new(0, 6)
+
+Home.Name = "Home"
+Home.Parent = TabsFrame
+Home.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Home.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Home.BorderSizePixel = 0
+Home.Size = UDim2.new(0, 123, 0.0911394581, 0)
+Home.Font = Enum.Font.GothamBlack
+Home.Text = "Home"
+Home.TextColor3 = Color3.fromRGB(255, 255, 255)
+Home.TextSize = 14.000
+
+Target.Name = "Target"
+Target.Parent = TabsFrame
+Target.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Target.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Target.BorderSizePixel = 0
+Target.Size = UDim2.new(0, 123, 0.0911394581, 0)
+Target.Font = Enum.Font.GothamBlack
+Target.Text = "Target"
+Target.TextColor3 = Color3.fromRGB(255, 255, 255)
+Target.TextSize = 14.000
+
+MainScripts.Name = "MainScripts"
+MainScripts.Parent = TabsFrame
+MainScripts.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+MainScripts.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainScripts.BorderSizePixel = 0
+MainScripts.Size = UDim2.new(0, 123, 0.0911394581, 0)
+MainScripts.Font = Enum.Font.GothamBlack
+MainScripts.Text = "MainScripts"
+MainScripts.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainScripts.TextSize = 14.000
+
+Toggles.Name = "Toggles"
+Toggles.Parent = TabsFrame
+Toggles.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Toggles.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Toggles.BorderSizePixel = 0
+Toggles.Size = UDim2.new(0, 123, 0.0911394581, 0)
+Toggles.Font = Enum.Font.GothamBlack
+Toggles.Text = "Toggles"
+Toggles.TextColor3 = Color3.fromRGB(255, 255, 255)
+Toggles.TextSize = 14.000
+
+QuickTP.Name = "QuickTP"
+QuickTP.Parent = TabsFrame
+QuickTP.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+QuickTP.BorderColor3 = Color3.fromRGB(0, 0, 0)
+QuickTP.BorderSizePixel = 0
+QuickTP.Size = UDim2.new(0, 123, 0.0911394581, 0)
+QuickTP.Font = Enum.Font.GothamBlack
+QuickTP.Text = "Quick TP"
+QuickTP.TextColor3 = Color3.fromRGB(255, 255, 255)
+QuickTP.TextSize = 14.000
+
+QuickBuy.Name = "QuickBuy"
+QuickBuy.Parent = TabsFrame
+QuickBuy.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+QuickBuy.BorderColor3 = Color3.fromRGB(0, 0, 0)
+QuickBuy.BorderSizePixel = 0
+QuickBuy.Size = UDim2.new(0, 123, 0.0911394581, 0)
+QuickBuy.Font = Enum.Font.GothamBlack
+QuickBuy.Text = "Quick Buy"
+QuickBuy.TextColor3 = Color3.fromRGB(255, 255, 255)
+QuickBuy.TextSize = 14.000
+
+AimLockESP.Name = "AimLockESP"
+AimLockESP.Parent = TabsFrame
+AimLockESP.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+AimLockESP.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AimLockESP.BorderSizePixel = 0
+AimLockESP.Size = UDim2.new(0, 123, 0.0911394581, 0)
+AimLockESP.Font = Enum.Font.GothamBlack
+AimLockESP.Text = "Aimlock / ESP"
+AimLockESP.TextColor3 = Color3.fromRGB(255, 255, 255)
+AimLockESP.TextSize = 14.000
+
+Cashhh.Name = "Cashhh"
+Cashhh.Parent = TabsFrame
+Cashhh.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Cashhh.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Cashhh.BorderSizePixel = 0
+Cashhh.Size = UDim2.new(0, 123, 0.0911394581, 0)
+Cashhh.Font = Enum.Font.GothamBlack
+Cashhh.Text = "Cash Stuff"
+Cashhh.TextColor3 = Color3.fromRGB(255, 255, 255)
+Cashhh.TextSize = 14.000
+
+Audio.Name = "Audio"
+Audio.Parent = TabsFrame
+Audio.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Audio.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Audio.BorderSizePixel = 0
+Audio.Size = UDim2.new(0, 123, 0.0911394581, 0)
+Audio.Font = Enum.Font.GothamBlack
+Audio.Text = "Sound Board"
+Audio.TextColor3 = Color3.fromRGB(255, 255, 255)
+Audio.TextSize = 14.000
+
+-- Scripts:
+
+local function VBEL_fake_script() -- Fly.LocalScript 
+	local script = Instance.new('LocalScript', Fly)
+
+	
+end
+coroutine.wrap(VBEL_fake_script)()
+local function AHTW_fake_script() -- View.LocalScript 
+	local script = Instance.new('LocalScript', View)
+
+	local Players = game:GetService("Players")
+	local LocalPlayer = Players.LocalPlayer
+	local Camera = game.Workspace.CurrentCamera
+	
+	local function findPlayerByPartialName(partialName)
+		local bestMatchPlayer = nil
+		local bestMatchLength = math.huge
+	
+		for _, player in ipairs(Players:GetPlayers()) do
+			local username = player.Name
+	
+			if string.sub(username, 1, #partialName):lower() == partialName:lower() then
+				local matchLength = #username
+	
+				if matchLength < bestMatchLength then
+					bestMatchPlayer = player
+					bestMatchLength = matchLength
+				end
+			end
+		end
+	
+		return bestMatchPlayer
+	end
+	
+	local function findCharacterByPartialName(partialName)
+		for _, npc in ipairs(game.Workspace:GetChildren()) do
+			if npc:IsA("Model") and npc.Name:lower() == partialName:lower() then
+				return npc
+			end
+		end
+		return nil
+	end
+	
+	local TextBox = script.Parent.Parent.Parent.Parent.TargetMenuFrame.Contents.CaaTargetTextbox
+	local ViewButton = script.Parent.Parent.Parent.TargetPage.View
+	
+	local isViewing = false
+	local originalCameraSubject = Camera.CameraSubject
+	local originalCameraType = Camera.CameraType
+	local originalCameraCFrame = Camera.CFrame
+	
+	local function updateAutocompleteText()
+		local partialName = TextBox.Text:lower()
+		if partialName == "" then
+			return  -- Exit the function if the text box is empty
+		end
+	
+		local bestMatchPlayer = findPlayerByPartialName(partialName)
+		local bestMatchNPC = findCharacterByPartialName(partialName)
+	
+		if bestMatchPlayer then
+			local username = bestMatchPlayer.Name
+			TextBox.Text = username
+		elseif bestMatchNPC then
+			local npcName = bestMatchNPC.Name
+			TextBox.Text = npcName
+		end
+	end
+	
+	TextBox.FocusLost:Connect(updateAutocompleteText)
+	
+	ViewButton.MouseButton1Click:Connect(function()
+		local targetName = TextBox.Text
+		local targetPlayer = findPlayerByPartialName(targetName)
+		local targetNPC = findCharacterByPartialName(targetName)
+	
+		if isViewing then
+			-- Stop viewing and restore the original camera settings
+			Camera.CameraSubject = originalCameraSubject
+			Camera.CameraType = originalCameraType
+			Camera.CFrame = originalCameraCFrame
+	
+			isViewing = false
+			print("Stopped viewing.")
+		elseif targetPlayer then
+			local targetCharacter = targetPlayer.Character
+			if targetCharacter then
+				Camera.CameraSubject = targetCharacter.Humanoid
+				Camera.CameraType = Enum.CameraType.Custom
+				Camera.CFrame = targetCharacter.HumanoidRootPart.CFrame + Vector3.new(0, 3, 0)
+	
+				isViewing = true
+				print("Viewing player: " .. targetPlayer.Name)
+			end
+		elseif targetNPC then
+			-- Perform the view functionality for NPCs here
+			-- You can customize this part based on your requirements
+			-- For example, you can focus the camera on the target NPC
+	
+			isViewing = true
+			print("Viewing NPC: " .. targetNPC.Name)
+		else
+			print("Player or NPC not found.")
+		end
+	end)
+	
+end
+coroutine.wrap(AHTW_fake_script)()
+local function NEMSOX_fake_script() -- Goto.LocalScript 
+	local script = Instance.new('LocalScript', Goto)
+
+	local Players = game:GetService("Players")
+	local LocalPlayer = Players.LocalPlayer
+	local StarterGui = game:GetService("StarterGui")
+	
+	local function teleportTo(target)
+		local humanoidRootPart = LocalPlayer.Character and LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
+		local targetHumanoidRootPart = target:FindFirstChild("HumanoidRootPart")
+	
+		if humanoidRootPart and targetHumanoidRootPart then
+			local targetPosition = targetHumanoidRootPart.Position
+			local targetOrientation = targetHumanoidRootPart.CFrame.LookVector
+			local direction = (targetPosition - targetOrientation * 5) - targetPosition
+			humanoidRootPart.CFrame = CFrame.new(targetPosition + direction)
+			print("Teleported behind " .. target.Name)
+		else
+			print("Teleportation failed.")
+		end
+	end
+	
+	local function findPlayerByPartialName(partialName)
+		local bestMatchPlayer = nil
+		local bestMatchLength = math.huge
+	
+		for _, player in ipairs(Players:GetPlayers()) do
+			local username = player.Name
+	
+			if string.sub(username, 1, #partialName):lower() == partialName:lower() then
+				local matchLength = #username
+	
+				if matchLength < bestMatchLength then
+					bestMatchPlayer = player
+					bestMatchLength = matchLength
+				end
+			end
+		end
+	
+		return bestMatchPlayer
+	end
+	
+	local function findPlayerByPartialDisplayName(partialDisplayName)
+		local bestMatchPlayer = nil
+		local bestMatchLength = math.huge
+	
+		for _, player in ipairs(Players:GetPlayers()) do
+			local displayName = player.DisplayName
+	
+			if string.sub(displayName, 1, #partialDisplayName):lower() == partialDisplayName:lower() then
+				local matchLength = #displayName
+	
+				if matchLength < bestMatchLength then
+					bestMatchPlayer = player
+					bestMatchLength = matchLength
+				end
+			end
+		end
+	
+		return bestMatchPlayer
+	end
+	
+	local function findPlayerByUsernameOrDisplayName(partialName)
+		local bestMatchPlayer = nil
+		local bestMatchLength = math.huge
+	
+		for _, player in ipairs(Players:GetPlayers()) do
+			local username = player.Name
+			local displayName = player.DisplayName
+	
+			if string.sub(username, 1, #partialName):lower() == partialName:lower() or
+				string.sub(displayName, 1, #partialName):lower() == partialName:lower() then
+				local matchLength = math.min(#username, #displayName)
+	
+				if matchLength < bestMatchLength then
+					bestMatchPlayer = player
+					bestMatchLength = matchLength
+				end
+			end
+		end
+	
+		return bestMatchPlayer
+	end
+	
+	local TeleportButton = script.Parent.Parent.Parent.TargetPage.Goto
+	local TextBox = script.Parent.Parent.Parent.Parent.TargetMenuFrame.Contents.CaaTargetTextbox
+	local ImageLabel = script.Parent.Parent.Parent.Parent.TargetMenuFrame.Contents.BTargetImage
+	
+	local function updateProfilePicture(targetPlayer)
+		-- Update the ImageLabel with the player's avatar image
+		local userId = targetPlayer.UserId
+		local thumbType = Enum.ThumbnailType.HeadShot
+		local thumbSize = Enum.ThumbnailSize.Size420x420
+		local thumbUrl = Players:GetUserThumbnailAsync(userId, thumbType, thumbSize)
+	
+		ImageLabel.Image = thumbUrl
+	end
+	
+	local function updateTextBoxText(targetPlayer)
+		-- Update the TextBox text with the target player's full username
+		TextBox.Text = targetPlayer.Name
+	end
+	
+	local function handleEnterPressed()
+		local targetName = TextBox.Text
+		local targetPlayer = findPlayerByUsernameOrDisplayName(targetName)
+	
+		if targetPlayer then
+			if targetPlayer ~= LocalPlayer then
+				teleportTo(targetPlayer.Character)
+			else
+				print("Cannot teleport to yourself.")
+			end
+		else
+			print("Player not found.")
+		end
+	end
+	
+	TeleportButton.MouseButton1Click:Connect(handleEnterPressed)
+	
+	TextBox:GetPropertyChangedSignal("Text"):Connect(function()
+		if TextBox:IsFocused() then
+			-- Clear the ImageLabel when typing in the TextBox
+			ImageLabel.Image = ""
+		end
+	end)
+	
+	TextBox.FocusLost:Connect(function(enterPressed)
+		if enterPressed then
+			local targetName = TextBox.Text
+			local targetPlayer = findPlayerByUsernameOrDisplayName(targetName)
+	
+			if targetPlayer then
+				updateProfilePicture(targetPlayer)
+				updateTextBoxText(targetPlayer)
+			else
+				ImageLabel.Image = ""
+			end
+		end
+	end)
+	
+	TextBox.Changed:Connect(function(property)
+		if property == "Text" and TextBox:IsFocused() then
+			if TextBox.Text == "" then
+				ImageLabel.Image = ""
+			else
+				local targetPlayer = findPlayerByUsernameOrDisplayName(TextBox.Text)
+	
+				if targetPlayer then
+					updateProfilePicture(targetPlayer)
+				end
+			end
+		end
+	end)
+	
+	Players.PlayerRemoving:Connect(function(player)
+		if TextBox.Text:lower() == player.Name:lower() then
+			StarterGui:SetCore("SendNotification", {
+				Title = "Target Left",
+				Text = "The target player has left the game.",
+				Icon = "",
+				Duration = 5,
+			})
+		end
+	end)
+	
+end
+coroutine.wrap(NEMSOX_fake_script)()
+local function UENNN_fake_script() -- PlayerImage.LocalScript 
+	local script = Instance.new('LocalScript', PlayerImage)
+
+	
+end
+coroutine.wrap(UENNN_fake_script)()
+local function ABBNNAL_fake_script() -- CancelSound.LocalScript 
+	local script = Instance.new('LocalScript', CancelSound)
+
+	local button = script.Parent.Parent.Parent.Parent.Parent.Pages.SoundBoardPage.AudioBoard.CancelSound
+	
+	function hideaudio()
+		script.Parent.Parent.Parent.Parent.Parent.Pages.SoundBoardPage.AudioBoard.Visible = false
+	end
+	
+	button.MouseButton1Click:Connect(function()
+		hideaudio()
+		script.Parent.Parent.Parent.Parent.Parent.Pages.SoundBoardPage.SoundCollection.Visible = true
+	end)
+end
+coroutine.wrap(ABBNNAL_fake_script)()
+local function KDSGGO_fake_script() -- ConfirmSound.LocalScript 
+	local script = Instance.new('LocalScript', ConfirmSound)
+
+	local button = script.Parent.Parent.Parent.Parent.Parent.Pages.SoundBoardPage.AudioBoard.ConfirmSound
+	
+	function hideaudio()
+		script.Parent.Parent.Parent.Parent.Parent.Pages.SoundBoardPage.AudioBoard.Visible = false
+	end
+	
+	button.MouseButton1Click:Connect(function()
+		hideaudio()
+		script.Parent.Parent.Parent.Parent.Parent.Pages.SoundBoardPage.SoundCollection.Visible = true
+	end)
+end
+coroutine.wrap(KDSGGO_fake_script)()
+local function WCSR_fake_script() -- NewAudio.LocalScript 
+	local script = Instance.new('LocalScript', NewAudio)
+
+	local button = script.Parent.Parent.Parent.Parent.Pages.SoundBoardPage.NewAudio
+	
+	function hideaudio()
+		script.Parent.Parent.Parent.Parent.Pages.SoundBoardPage.SoundCollection.Visible = false
+	end
+	
+	button.MouseButton1Click:Connect(function()
+		hideaudio()
+		script.Parent.Parent.Parent.Parent.Pages.SoundBoardPage.AudioBoard.Visible = true
+	end)
+end
+coroutine.wrap(WCSR_fake_script)()
+local function OXCPO_fake_script() -- Home.LocalScript 
+	local script = Instance.new('LocalScript', Home)
+
+	local button = script.Parent.Parent.Parent.Parent.MenuFrame.TabsFrame.Home
+	
+	function HideAllFrames()
+		script.Parent.Parent.Parent.Parent.Pages.HomePage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.TargetPage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.MainScriptsPage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.TogglesPage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.QuickTpPage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.QuickBuyPage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.AimLockPage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.CashPage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.SoundBoardPage.Visible = false
+	end
+	
+	button.MouseButton1Click:Connect(function()
+		HideAllFrames()
+		script.Parent.Parent.Parent.Parent.Pages.HomePage.Visible = true
+	end)
+end
+coroutine.wrap(OXCPO_fake_script)()
+local function KFGMUP_fake_script() -- Target.LocalScript 
+	local script = Instance.new('LocalScript', Target)
+
+	local button = script.Parent.Parent.Parent.Parent.MenuFrame.TabsFrame.Target
+	
+	function HideAllFrames()
+		script.Parent.Parent.Parent.Parent.Pages.HomePage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.TargetPage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.MainScriptsPage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.TogglesPage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.QuickTpPage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.QuickBuyPage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.AimLockPage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.CashPage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.SoundBoardPage.Visible = false
+	end
+	
+	button.MouseButton1Click:Connect(function()
+		HideAllFrames()
+		script.Parent.Parent.Parent.Parent.Pages.TargetPage.Visible = true
+	end)
+end
+coroutine.wrap(KFGMUP_fake_script)()
+local function CVKTYL_fake_script() -- MainScripts.LocalScript 
+	local script = Instance.new('LocalScript', MainScripts)
+
+	local button = script.Parent.Parent.Parent.Parent.MenuFrame.TabsFrame.MainScripts
+	
+	function HideAllFrames()
+		script.Parent.Parent.Parent.Parent.Pages.HomePage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.TargetPage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.MainScriptsPage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.TogglesPage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.QuickTpPage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.QuickBuyPage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.AimLockPage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.CashPage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.SoundBoardPage.Visible = false
+	end
+	
+	button.MouseButton1Click:Connect(function()
+		HideAllFrames()
+		script.Parent.Parent.Parent.Parent.Pages.MainScriptsPage.Visible = true
+	end)
+end
+coroutine.wrap(CVKTYL_fake_script)()
+local function BAGUEBC_fake_script() -- Toggles.LocalScript 
+	local script = Instance.new('LocalScript', Toggles)
+
+	local button = script.Parent.Parent.Parent.Parent.MenuFrame.TabsFrame.Toggles
+	
+	function HideAllFrames()
+		script.Parent.Parent.Parent.Parent.Pages.HomePage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.TargetPage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.MainScriptsPage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.TogglesPage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.QuickTpPage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.QuickBuyPage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.AimLockPage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.CashPage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.SoundBoardPage.Visible = false
+	end
+	
+	button.MouseButton1Click:Connect(function()
+		HideAllFrames()
+		script.Parent.Parent.Parent.Parent.Pages.TogglesPage.Visible = true
+	end)
+end
+coroutine.wrap(BAGUEBC_fake_script)()
+local function FTYB_fake_script() -- QuickTP.LocalScript 
+	local script = Instance.new('LocalScript', QuickTP)
+
+	local button = script.Parent.Parent.Parent.Parent.MenuFrame.TabsFrame.QuickTP
+	
+	function HideAllFrames()
+		script.Parent.Parent.Parent.Parent.Pages.HomePage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.TargetPage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.MainScriptsPage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.TogglesPage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.QuickTpPage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.QuickBuyPage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.AimLockPage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.CashPage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.SoundBoardPage.Visible = false
+	end
+	
+	button.MouseButton1Click:Connect(function()
+		HideAllFrames()
+		script.Parent.Parent.Parent.Parent.Pages.QuickTpPage.Visible = true
+	end)
+end
+coroutine.wrap(FTYB_fake_script)()
+local function ZGFIXMJ_fake_script() -- QuickBuy.LocalScript 
+	local script = Instance.new('LocalScript', QuickBuy)
+
+	local button = script.Parent.Parent.Parent.Parent.MenuFrame.TabsFrame.QuickBuy
+	
+	function HideAllFrames()
+		script.Parent.Parent.Parent.Parent.Pages.HomePage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.TargetPage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.MainScriptsPage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.TogglesPage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.QuickTpPage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.QuickBuyPage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.AimLockPage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.CashPage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.SoundBoardPage.Visible = false
+	end
+	
+	button.MouseButton1Click:Connect(function()
+		HideAllFrames()
+		script.Parent.Parent.Parent.Parent.Pages.QuickBuyPage.Visible = true
+	end)
+end
+coroutine.wrap(ZGFIXMJ_fake_script)()
+local function REII_fake_script() -- AimLockESP.LocalScript 
+	local script = Instance.new('LocalScript', AimLockESP)
+
+	local button = script.Parent.Parent.Parent.Parent.MenuFrame.TabsFrame.AimLockESP
+	function HideAllFrames()
+		script.Parent.Parent.Parent.Parent.Pages.HomePage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.TargetPage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.MainScriptsPage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.TogglesPage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.QuickTpPage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.QuickBuyPage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.AimLockPage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.CashPage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.SoundBoardPage.Visible = false
+	end
+	
+	button.MouseButton1Click:Connect(function()
+		HideAllFrames()
+		script.Parent.Parent.Parent.Parent.Pages.AimLockPage.Visible = true
+	end)
+end
+coroutine.wrap(REII_fake_script)()
+local function TDAJ_fake_script() -- Cashhh.LocalScript 
+	local script = Instance.new('LocalScript', Cashhh)
+
+	local button = script.Parent.Parent.Parent.Parent.MenuFrame.TabsFrame.Cash
+	
+	function HideAllFrames()
+		script.Parent.Parent.Parent.Parent.Pages.HomePage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.TargetPage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.MainScriptsPage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.TogglesPage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.QuickTpPage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.QuickBuyPage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.AimLockPage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.CashPage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.SoundBoardPage.Visible = false
+	end
+	
+	button.MouseButton1Click:Connect(function()
+		HideAllFrames()
+		script.Parent.Parent.Parent.Parent.Pages.CashPage.Visible = true
+	end)
+end
+coroutine.wrap(TDAJ_fake_script)()
+local function MYDF_fake_script() -- Audio.LocalScript 
+	local script = Instance.new('LocalScript', Audio)
+
+	local button = script.Parent.Parent.Parent.Parent.MenuFrame.TabsFrame.Audio
+	
+	function HideAllFrames()
+		script.Parent.Parent.Parent.Parent.Pages.HomePage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.TargetPage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.MainScriptsPage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.TogglesPage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.QuickTpPage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.QuickBuyPage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.AimLockPage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.CashPage.Visible = false
+		script.Parent.Parent.Parent.Parent.Pages.SoundBoardPage.Visible = false
+	end
+	
+	button.MouseButton1Click:Connect(function()
+		HideAllFrames()
+		script.Parent.Parent.Parent.Parent.Pages.SoundBoardPage.Visible = true
+	end)
+end
+coroutine.wrap(MYDF_fake_script)()
