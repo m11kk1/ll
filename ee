@@ -453,7 +453,7 @@ local SwagmodeV002 = {
 }
 
 SwagmodeV002.SwagmodeV002.Name = "SwagmodeV002"
-SwagmodeV002.SwagmodeV002.Parent = game.CoreGui
+SwagmodeV002.SwagmodeV002.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 SwagmodeV002.SwagmodeV002.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 SwagmodeV002.SwagmodeV002.ResetOnSpawn = false
 
@@ -3770,7 +3770,6 @@ SwagmodeV002.Caps.Text = "Exact Caps"
 SwagmodeV002.Caps.TextColor3 = Color3.fromRGB(0, 0, 0)
 SwagmodeV002.Caps.TextSize = 18.000
 SwagmodeV002.Caps.TextWrapped = true
-
 
 SwagmodeV002.TargetMenuFrame.Name = "TargetMenuFrame"
 SwagmodeV002.TargetMenuFrame.Parent = SwagmodeV002.SwagmodeFrame
