@@ -4624,8 +4624,6 @@ end)
 
 
 Buttons.animations.MouseButton1Click:Connect(function()
-	-- Credit for Zackary#1011 for making animation pack/++
-	-- and credit for ilovebee#6666 for giving animations id
 
 	repeat
 		wait()
